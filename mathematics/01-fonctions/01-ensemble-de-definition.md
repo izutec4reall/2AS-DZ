@@ -135,13 +135,8 @@ $$f(x) = \sqrt{x - 3}$$
 ### 💡 الحل المفصل للتمرين الأول:
 
 1. **بالنسبة لـ $f_1(x) = \dfrac{3x - 1}{2x^2 - 8}$:**
-   * **الشرط:** المقام يختلف عن الصفر: $2x^2 - 8 
-eq 0 \iff x^2 - 4 
-eq 0 \iff (x - 2)(x + 2) 
-eq 0$.
-   * إذن: $x 
-eq 2$ و $x 
-eq -2$.
+   * **الشرط:** المقام يختلف عن الصفر: $2x^2 - 8 \neq 0 \iff x^2 - 4 \neq 0 \iff (x - 2)(x + 2) \neq 0$.
+   * إذن: $x \neq 2$ و $x \neq -2$.
    * **النتيجة:** $D_{f_1} = \mathbb{R} \setminus \{-2, 2\} = ]-\infty, -2[\, \cup\, ]-2, 2[\, \cup\, ]2, +\infty[$.
 
 2. **بالنسبة لـ $f_2(x) = \sqrt{4 - 2x}$:**
@@ -155,8 +150,7 @@ eq -2$.
    * **النتيجة:** $D_{f_3} = ]-\infty, -3[\, \cup\, ]3, +\infty[$.
 
 4. **بالنسبة لـ $f_4(x) = \sqrt{\dfrac{x - 3}{x + 2}}$:**
-   * **الشرط:** حاصل القسمة موجب أو معدوم والمقام غير معدوم: $\dfrac{x - 3}{x + 2} \ge 0$ و $x + 2 
-eq 0$.
+   * **الشرط:** حاصل القسمة موجب أو معدوم والمقام غير معدوم: $\dfrac{x - 3}{x + 2} \ge 0$ و $x + 2 \neq 0$.
    * ندرس إشارة الكسر بجدول الإشارة:
      * ينعدم البسط عند $x = 3$.
      * ينعدم المقام عند القيمة الممنوعة $x = -2$.
@@ -164,15 +158,13 @@ eq 0$.
    * **النتيجة:** $D_{f_4} = ]-\infty, -2[\, \cup\, [3, +\infty[$.
 
 5. **بالنسبة لـ $f_5(x) = \dfrac{\sqrt{x + 4}}{|x| - 2}$:**
-   * **الشرط:** $egin{cases} x + 4 \ge 0 \ |x| - 2 
-eq 0 \end{cases} \iff egin{cases} x \ge -4 \ |x| 
-eq 2 \iff x 
-eq 2 	ext{ و } x 
-eq -2 \end{cases}$
+   * **الشرط:**
+     $$\begin{cases} x + 4 \ge 0 \\ |x| - 2 \neq 0 \end{cases} \iff \begin{cases} x \ge -4 \\ |x| \neq 2 \iff x \neq 2 \text{ و } x \neq -2 \end{cases}$$
    * **النتيجة:** $D_{f_5} = [-4, -2[\, \cup\, ]-2, 2[\, \cup\, ]2, +\infty[$.
 
 6. **بالنسبة لـ $f_6(x) = \sqrt{x + 2} + \sqrt{6 - x}$:**
-   * **الشرط:** شرطا الوجود معاً (التقاطع): $egin{cases} x + 2 \ge 0 \iff x \ge -2 \ 6 - x \ge 0 \iff x \le 6 \end{cases}$
+   * **الشرط:** شرطا الوجود معاً (التقاطع):
+     $$\begin{cases} x + 2 \ge 0 \iff x \ge -2 \\ 6 - x \ge 0 \iff x \le 6 \end{cases}$$
    * تقاطع المجالين $[-2, +\infty[ \;\cap\; ]-\infty, 6]$ هو المجال المغلق $[-2, 6]$.
    * **النتيجة:** $D_{f_6} = [-2, 6]$.
 
@@ -180,7 +172,7 @@ eq -2 \end{cases}$
 
 ### 📌 التمرين الثاني (مسألة تركيب الدوال ومجموعة التعريف - نموذج الفروض)
 لتكن الدالتان $u$ و $v$ المعرفتان بـ:
-$$u(x) = 2x - 4 \quad 	ext{و} \quad v(x) = \dfrac{1}{x + 1}$$
+$$u(x) = 2x - 4 \quad \text{و} \quad v(x) = \dfrac{1}{x + 1}$$
 1. حدد $D_u$ و $D_v$.
 2. حدد مجموعة تعريف الدالة المركبة $g = v \circ u$.
 3. أعط عبارة الدالة $g(x)$.
@@ -190,17 +182,14 @@ $$u(x) = 2x - 4 \quad 	ext{و} \quad v(x) = \dfrac{1}{x + 1}$$
 
 ### 💡 الحل المفصل للتمرين الثاني:
 1. $u$ دالة تآلفية (كثير حدود): $D_u = \mathbb{R}$.  
-   $v$ دالة كسرية: المقام $x + 1 
-eq 0 \iff x 
-eq -1 \implies D_v = \mathbb{R} \setminus \{-1\}$.
+   $v$ دالة كسرية: المقام $x + 1 \neq 0 \iff x \neq -1 \implies D_v = \mathbb{R} \setminus \{-1\}$.
 
 2. **مجموعة تعريف $g = v \circ u$:**
    القاعدة العامة: $D_{v \circ u} = \{x \in D_u \mid u(x) \in D_v\}$.
-   * بما أن $D_u = \mathbb{R}$، فالشرط ينحصر في: $u(x) \in D_v \iff u(x) 
-eq -1$.
+   * بما أن $D_u = \mathbb{R}$، فالشرط ينحصر في: $u(x) \in D_v \iff u(x) \neq -1$.
    * نحل المعادلة: $2x - 4 = -1 \iff 2x = 3 \iff x = \dfrac{3}{2}$.
    * القيمة المرفوضة هي $x = \dfrac{3}{2}$.
-   * **النتيجة:** $D_{v \circ u} = \mathbb{R} \setminus \left\{\dfrac{3}{2}ight\} = \left]-\infty, \dfrac{3}{2}ight[\, \cup\, \left]\dfrac{3}{2}, +\inftyight[$.
+   * **النتيجة:** $D_{v \circ u} = \mathbb{R} \setminus \left\{\dfrac{3}{2}\right\} = \left]-\infty, \dfrac{3}{2}\right[\, \cup\, \left]\dfrac{3}{2}, +\infty\right[$.
 
 3. **عبارة الدالة $g(x) = (v \circ u)(x)$:**
    $$g(x) = v(u(x)) = \dfrac{1}{u(x) + 1} = \dfrac{1}{(2x - 4) + 1} = \dfrac{1}{2x - 3}$$
@@ -210,4 +199,4 @@ eq -1$.
    * بما أن $D_u = \mathbb{R}$، فإن الشرط $v(x) \in \mathbb{R}$ محقق دائماً لكل $x \in D_v$.
    * إذن: $D_{u \circ v} = D_v = \mathbb{R} \setminus \{-1\}$.
    * العبارة:
-     $$h(x) = u(v(x)) = 2 v(x) - 4 = 2\left(\dfrac{1}{x + 1}ight) - 4 = \dfrac{2 - 4(x + 1)}{x + 1} = \dfrac{-4x - 2}{x + 1}$$
+     $$h(x) = u(v(x)) = 2 v(x) - 4 = 2\left(\dfrac{1}{x + 1}\right) - 4 = \dfrac{2 - 4(x + 1)}{x + 1} = \dfrac{-4x - 2}{x + 1}$$
