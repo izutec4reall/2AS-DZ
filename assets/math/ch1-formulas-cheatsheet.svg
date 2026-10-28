@@ -1,0 +1,244 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 1400" font-family="'Arial', sans-serif" direction="rtl">
+  <!-- Background -->
+  <rect width="900" height="1400" fill="#0f1117" rx="16"/>
+  <!-- Top gradient banner -->
+  <defs>
+    <linearGradient id="bannerGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#1a1aff;stop-opacity:1"/>
+      <stop offset="100%" style="stop-color:#6600cc;stop-opacity:1"/>
+    </linearGradient>
+    <linearGradient id="cardGrad1" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#1e2235;stop-opacity:1"/>
+      <stop offset="100%" style="stop-color:#161a28;stop-opacity:1"/>
+    </linearGradient>
+    <linearGradient id="cardGrad2" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#1a2e1a;stop-opacity:1"/>
+      <stop offset="100%" style="stop-color:#111c11;stop-opacity:1"/>
+    </linearGradient>
+    <linearGradient id="cardGrad3" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#2e1a1a;stop-opacity:1"/>
+      <stop offset="100%" style="stop-color:#1c1111;stop-opacity:1"/>
+    </linearGradient>
+    <filter id="shadow">
+      <feDropShadow dx="0" dy="4" stdDeviation="6" flood-color="#000" flood-opacity="0.5"/>
+    </filter>
+  </defs>
+
+  <!-- Header -->
+  <rect x="0" y="0" width="900" height="90" fill="url(#bannerGrad)" rx="16"/>
+  <rect x="0" y="74" width="900" height="16" fill="url(#bannerGrad)"/>
+  <text x="450" y="38" font-size="26" font-weight="bold" fill="white" text-anchor="middle">📐 رياضيات — الفصل الأول</text>
+  <text x="450" y="68" font-size="16" fill="#ccc" text-anchor="middle">الدوال العددية · ملخص القوانين والتمثيلات</text>
+
+  <!-- ═══════════════════════════════════════════════════ -->
+  <!-- CARD 1: مجموعة التعريف -->
+  <!-- ═══════════════════════════════════════════════════ -->
+  <rect x="20" y="106" width="860" height="230" fill="url(#cardGrad1)" rx="12" filter="url(#shadow)" stroke="#3344cc" stroke-width="1.5"/>
+  <rect x="20" y="106" width="8" height="230" fill="#3344cc" rx="4"/>
+  <text x="870" y="130" font-size="15" fill="#8899ff" text-anchor="end" font-weight="bold">① مجموعة التعريف Dƒ</text>
+
+  <!-- Table of domains -->
+  <!-- Header row -->
+  <rect x="36" y="138" width="830" height="28" fill="#1e2860" rx="4"/>
+  <text x="860" y="157" font-size="13" fill="#aabbff" text-anchor="end">نوع الدالة</text>
+  <text x="530" y="157" font-size="13" fill="#aabbff" text-anchor="middle">الشرط</text>
+  <text x="150" y="157" font-size="13" fill="#aabbff" text-anchor="middle">مجموعة التعريف</text>
+
+  <!-- Row 1 -->
+  <rect x="36" y="166" width="830" height="26" fill="#141830" rx="2"/>
+  <text x="855" y="183" font-size="12" fill="#ddeeff" text-anchor="end">كثيرة حدود f(x)=aₙxⁿ+...+a₀</text>
+  <text x="530" y="183" font-size="12" fill="#66ff99" text-anchor="middle">دائماً</text>
+  <text x="150" y="183" font-size="13" fill="#ffdd44" text-anchor="middle" font-weight="bold">ℝ = ]−∞ , +∞[</text>
+
+  <!-- Row 2 -->
+  <rect x="36" y="192" width="830" height="26" fill="#111520" rx="2"/>
+  <text x="855" y="209" font-size="12" fill="#ddeeff" text-anchor="end">كسرية f(x)=g(x)/h(x)</text>
+  <text x="530" y="209" font-size="12" fill="#ff9966" text-anchor="middle">h(x) ≠ 0</text>
+  <text x="150" y="209" font-size="13" fill="#ffdd44" text-anchor="middle" font-weight="bold">ℝ ∖ {x : h(x)=0}</text>
+
+  <!-- Row 3 -->
+  <rect x="36" y="218" width="830" height="26" fill="#141830" rx="2"/>
+  <text x="855" y="235" font-size="12" fill="#ddeeff" text-anchor="end">جذرية f(x)=√g(x)</text>
+  <text x="530" y="235" font-size="12" fill="#ff9966" text-anchor="middle">g(x) ≥ 0</text>
+  <text x="150" y="235" font-size="13" fill="#ffdd44" text-anchor="middle" font-weight="bold">{x ∈ ℝ : g(x) ≥ 0}</text>
+
+  <!-- Row 4 -->
+  <rect x="36" y="244" width="830" height="26" fill="#111520" rx="2"/>
+  <text x="855" y="261" font-size="12" fill="#ddeeff" text-anchor="end">جذر في المقام f(x)=g(x)/√h(x)</text>
+  <text x="530" y="261" font-size="12" fill="#ff9966" text-anchor="middle">h(x) &gt; 0</text>
+  <text x="150" y="261" font-size="13" fill="#ffdd44" text-anchor="middle" font-weight="bold">{x ∈ ℝ : h(x) &gt; 0}</text>
+
+  <!-- Row 5 -->
+  <rect x="36" y="270" width="830" height="26" fill="#141830" rx="2"/>
+  <text x="855" y="287" font-size="12" fill="#ddeeff" text-anchor="end">مركبة: جذر + كسر</text>
+  <text x="530" y="287" font-size="12" fill="#ff9966" text-anchor="middle">g(x)≥0 و h(x)≠0</text>
+  <text x="150" y="287" font-size="13" fill="#ffdd44" text-anchor="middle" font-weight="bold">تقاطع الشرطين</text>
+
+  <!-- Visual: number line -->
+  <line x1="36" y1="320" x2="620" y2="320" stroke="#556" stroke-width="1.5"/>
+  <line x1="36" y1="315" x2="36" y2="325" stroke="#778" stroke-width="1.5"/>
+  <line x1="620" y1="315" x2="620" y2="325" stroke="#778" stroke-width="1.5"/>
+  <circle cx="200" cy="320" r="5" fill="none" stroke="#ff6644" stroke-width="2"/>
+  <circle cx="450" cy="320" r="5" fill="#ff6644"/>
+  <rect x="200" y="315" width="250" height="10" fill="#ff664433"/>
+  <text x="200" y="340" font-size="10" fill="#ff9977" text-anchor="middle">−∞</text>
+  <text x="450" y="340" font-size="10" fill="#ff9977" text-anchor="middle">a</text>
+  <text x="620" y="340" font-size="10" fill="#ff9977" text-anchor="middle">+∞</text>
+  <text x="690" y="325" font-size="11" fill="#aab" text-anchor="start">مثال: Dƒ = [a, +∞[</text>
+
+  <!-- ═══════════════════════════════════════════════════ -->
+  <!-- CARD 2: الدوال المرجعية -->
+  <!-- ═══════════════════════════════════════════════════ -->
+  <rect x="20" y="350" width="860" height="280" fill="url(#cardGrad2)" rx="12" filter="url(#shadow)" stroke="#229944" stroke-width="1.5"/>
+  <rect x="20" y="350" width="8" height="280" fill="#229944" rx="4"/>
+  <text x="870" y="374" font-size="15" fill="#44cc77" text-anchor="end" font-weight="bold">② الدوال المرجعية الأساسية</text>
+
+  <!-- f(x)=x -->
+  <rect x="36" y="382" width="190" height="220" fill="#0d1a0d" rx="8" stroke="#1a4422" stroke-width="1"/>
+  <text x="131" y="402" font-size="13" fill="#66ff99" text-anchor="middle" font-weight="bold">f(x) = x</text>
+  <text x="131" y="418" font-size="11" fill="#99ccaa" text-anchor="middle">Dƒ = ℝ</text>
+  <!-- mini graph x -->
+  <line x1="60" y1="540" x2="210" y2="540" stroke="#334" stroke-width="1"/>
+  <line x1="131" y1="430" x2="131" y2="590" stroke="#334" stroke-width="1"/>
+  <line x1="60" y1="590" x2="210" y2="430" stroke="#44ff88" stroke-width="2"/>
+  <text x="131" y="602" font-size="10" fill="#556" text-anchor="middle">خط مستقيم مائل 45°</text>
+
+  <!-- f(x)=x² -->
+  <rect x="240" y="382" width="190" height="220" fill="#0d1a0d" rx="8" stroke="#1a4422" stroke-width="1"/>
+  <text x="335" y="402" font-size="13" fill="#66ff99" text-anchor="middle" font-weight="bold">f(x) = x²</text>
+  <text x="335" y="418" font-size="11" fill="#99ccaa" text-anchor="middle">Dƒ = ℝ  ،  Imƒ = [0,+∞[</text>
+  <!-- mini parabola -->
+  <path d="M 260 570 Q 335 430 410 570" stroke="#44ff88" stroke-width="2" fill="none"/>
+  <circle cx="335" cy="430" r="3" fill="#ffdd44"/>
+  <text x="335" y="445" font-size="10" fill="#ffdd44" text-anchor="middle">قمة (0,0)</text>
+  <text x="335" y="602" font-size="10" fill="#556" text-anchor="middle">قطع مكافئ متماثل</text>
+
+  <!-- f(x)=√x -->
+  <rect x="444" y="382" width="190" height="220" fill="#0d1a0d" rx="8" stroke="#1a4422" stroke-width="1"/>
+  <text x="539" y="402" font-size="13" fill="#66ff99" text-anchor="middle" font-weight="bold">f(x) = √x</text>
+  <text x="539" y="418" font-size="11" fill="#99ccaa" text-anchor="middle">Dƒ = [0,+∞[</text>
+  <!-- sqrt curve -->
+  <path d="M 464 575 Q 490 540 520 510 Q 550 480 590 460 Q 615 448 630 440" stroke="#44ff88" stroke-width="2" fill="none"/>
+  <circle cx="464" cy="575" r="3" fill="#ffdd44"/>
+  <text x="539" y="602" font-size="10" fill="#556" text-anchor="middle">تزايد على [0,+∞[</text>
+
+  <!-- f(x)=1/x -->
+  <rect x="648" y="382" width="208" height="220" fill="#0d1a0d" rx="8" stroke="#1a4422" stroke-width="1"/>
+  <text x="752" y="402" font-size="13" fill="#66ff99" text-anchor="middle" font-weight="bold">f(x) = 1/x</text>
+  <text x="752" y="418" font-size="11" fill="#99ccaa" text-anchor="middle">Dƒ = ℝ* = ℝ∖{0}</text>
+  <!-- hyperbola -->
+  <line x1="668" y1="540" x2="845" y2="540" stroke="#334" stroke-width="1"/>
+  <line x1="752" y1="430" x2="752" y2="590" stroke="#334" stroke-width="1" stroke-dasharray="4"/>
+  <path d="M 668 450 Q 710 480 740 530" stroke="#44ff88" stroke-width="2" fill="none"/>
+  <path d="M 762 555 Q 790 590 845 610" stroke="#44ff88" stroke-width="2" fill="none"/>
+  <text x="752" y="625" font-size="10" fill="#556" text-anchor="middle">قطبية ، مقاربتان x=0 ، y=0</text>
+
+  <!-- ═══════════════════════════════════════════════════ -->
+  <!-- CARD 3: عموميات الدوال -->
+  <!-- ═══════════════════════════════════════════════════ -->
+  <rect x="20" y="645" width="420" height="330" fill="url(#cardGrad3)" rx="12" filter="url(#shadow)" stroke="#cc4422" stroke-width="1.5"/>
+  <rect x="20" y="645" width="8" height="330" fill="#cc4422" rx="4"/>
+  <text x="430" y="668" font-size="14" fill="#ff7755" text-anchor="end" font-weight="bold">③ عموميات: التماثل والتركيب</text>
+
+  <!-- Even/Odd -->
+  <text x="430" y="690" font-size="12" fill="#ffbb88" text-anchor="end">دالة زوجية (تماثل محور y)</text>
+  <rect x="36" y="694" width="385" height="38" fill="#2a1510" rx="6"/>
+  <text x="410" y="710" font-size="13" fill="#ff9966" text-anchor="end" font-weight="bold">f(−x) = f(x)</text>
+  <text x="410" y="726" font-size="11" fill="#cc7755" text-anchor="end">منحناها متماثل بالنسبة لمحور الترتيبات</text>
+
+  <text x="430" y="748" font-size="12" fill="#ffbb88" text-anchor="end">دالة فردية (تماثل نقطة الأصل)</text>
+  <rect x="36" y="752" width="385" height="38" fill="#2a1510" rx="6"/>
+  <text x="410" y="768" font-size="13" fill="#ff9966" text-anchor="end" font-weight="bold">f(−x) = −f(x)</text>
+  <text x="410" y="784" font-size="11" fill="#cc7755" text-anchor="end">منحناها متماثل بالنسبة للنقطة O(0,0)</text>
+
+  <!-- Composite -->
+  <text x="430" y="808" font-size="12" fill="#ffbb88" text-anchor="end">التركيب (f∘g)</text>
+  <rect x="36" y="812" width="385" height="52" fill="#2a1510" rx="6"/>
+  <text x="410" y="830" font-size="13" fill="#ff9966" text-anchor="end" font-weight="bold">(f∘g)(x) = f(g(x))</text>
+  <text x="410" y="848" font-size="11" fill="#cc7755" text-anchor="end">الشرط: g(x) ∈ Dƒ</text>
+  <text x="410" y="862" font-size="11" fill="#cc7755" text-anchor="end">تحذير: f∘g ≠ g∘f بشكل عام</text>
+
+  <!-- Translation -->
+  <text x="430" y="882" font-size="12" fill="#ffbb88" text-anchor="end">الانسحاب (x₀, y₀)</text>
+  <rect x="36" y="886" width="385" height="40" fill="#2a1510" rx="6"/>
+  <text x="410" y="903" font-size="13" fill="#ff9966" text-anchor="end" font-weight="bold">X = x − x₀  ،  Y = y − y₀</text>
+  <text x="410" y="920" font-size="11" fill="#cc7755" text-anchor="end">مركز التماثل: (a,b) ⟹ f(2a−x)+f(x)=2b</text>
+
+  <!-- Mirror -->
+  <text x="430" y="942" font-size="12" fill="#ffbb88" text-anchor="end">تمثيل |f(x)|</text>
+  <rect x="36" y="946" width="385" height="20" fill="#2a1510" rx="6"/>
+  <text x="410" y="962" font-size="11" fill="#cc7755" text-anchor="end">ما كان تحت المحور يُعكس فوقه</text>
+
+  <!-- ═══════════════════════════════════════════════════ -->
+  <!-- CARD 4: كثيرات الحدود -->
+  <!-- ═══════════════════════════════════════════════════ -->
+  <rect x="454" y="645" width="426" height="330" fill="url(#cardGrad1)" rx="12" filter="url(#shadow)" stroke="#5566ee" stroke-width="1.5"/>
+  <rect x="454" y="645" width="8" height="330" fill="#5566ee" rx="4"/>
+  <text x="870" y="668" font-size="14" fill="#8899ff" text-anchor="end" font-weight="bold">④ كثيرات الحدود والتحليل</text>
+
+  <!-- Polynomial -->
+  <rect x="468" y="678" width="394" height="36" fill="#0f1535" rx="6"/>
+  <text x="852" y="693" font-size="12" fill="#aabbff" text-anchor="end">P(x) = aₙxⁿ + aₙ₋₁xⁿ⁻¹ + ... + a₁x + a₀</text>
+  <text x="852" y="709" font-size="11" fill="#7788cc" text-anchor="end">الدرجة n ، المعامل الرئيسي aₙ</text>
+
+  <!-- Factor theorem -->
+  <text x="870" y="730" font-size="12" fill="#ffdd44" text-anchor="end">مبرهنة العامل</text>
+  <rect x="468" y="734" width="394" height="38" fill="#1a1a30" rx="6" stroke="#ffdd4455" stroke-width="1"/>
+  <text x="852" y="750" font-size="12" fill="#ffdd44" text-anchor="end">P(α) = 0  ⟺  P(x) = (x−α)·Q(x)</text>
+  <text x="852" y="767" font-size="11" fill="#aa9944" text-anchor="end">الجذر α ⟹ (x−α) عامل في P(x)</text>
+
+  <!-- Quadratic -->
+  <text x="870" y="790" font-size="12" fill="#ff88cc" text-anchor="end">المعادلة التربيعية ax²+bx+c=0</text>
+  <rect x="468" y="794" width="394" height="72" fill="#1a1025" rx="6" stroke="#ff88cc55" stroke-width="1"/>
+  <text x="852" y="812" font-size="13" fill="#ff88cc" text-anchor="end" font-weight="bold">Δ = b² − 4ac</text>
+  <text x="852" y="830" font-size="11" fill="#cc66aa" text-anchor="end">Δ&gt;0: جذران x₁,₂=(−b±√Δ)/2a</text>
+  <text x="852" y="846" font-size="11" fill="#cc66aa" text-anchor="end">Δ=0: جذر مزدوج x=−b/2a</text>
+  <text x="852" y="862" font-size="11" fill="#cc66aa" text-anchor="end">Δ&lt;0: لا جذور حقيقية</text>
+
+  <!-- Vieta -->
+  <text x="870" y="884" font-size="12" fill="#44ddff" text-anchor="end">علاقات فييت (Viète)</text>
+  <rect x="468" y="888" width="394" height="52" fill="#0d1f2a" rx="6" stroke="#44ddff55" stroke-width="1"/>
+  <text x="852" y="906" font-size="13" fill="#44ddff" text-anchor="end" font-weight="bold">x₁ + x₂ = −b/a</text>
+  <text x="852" y="924" font-size="13" fill="#44ddff" text-anchor="end" font-weight="bold">x₁ × x₂ = c/a</text>
+  <text x="852" y="940" font-size="11" fill="#3399bb" text-anchor="end">المعادلة من الجذرين: X²−(x₁+x₂)X+(x₁x₂)=0</text>
+
+  <!-- ═══════════════════════════════════════════════════ -->
+  <!-- CARD 5: تمثيل بياني إجمالي -->
+  <!-- ═══════════════════════════════════════════════════ -->
+  <rect x="20" y="990" width="860" height="200" fill="#0d1020" rx="12" filter="url(#shadow)" stroke="#445566" stroke-width="1.5"/>
+  <text x="870" y="1012" font-size="14" fill="#99aacc" text-anchor="end" font-weight="bold">⑤ التمثيل البياني — قراءة المنحنى</text>
+
+  <!-- Axes -->
+  <line x1="60" y1="1160" x2="840" y2="1160" stroke="#556" stroke-width="1.5" marker-end="url(#arr)"/>
+  <line x1="160" y1="1005" x2="160" y2="1175" stroke="#556" stroke-width="1.5"/>
+  <text x="845" y="1155" font-size="12" fill="#778" text-anchor="start">x</text>
+  <text x="163" y="1008" font-size="12" fill="#778" text-anchor="start">y</text>
+
+  <!-- Sample curve -->
+  <path d="M 60 1120 C 100 1100 130 1090 160 1100 C 200 1115 230 1145 280 1140 C 340 1130 380 1060 440 1050 C 500 1040 540 1080 580 1100 C 630 1125 680 1145 750 1120 C 790 1107 820 1090 840 1080" 
+        stroke="#5577ff" stroke-width="2.5" fill="none"/>
+
+  <!-- Annotations -->
+  <circle cx="280" cy="1140" r="5" fill="#ff6644"/>
+  <text x="280" y="1130" font-size="10" fill="#ff6644" text-anchor="middle">حد أقصى محلي</text>
+
+  <circle cx="440" cy="1050" r="5" fill="#ff6644"/>
+  <text x="440" y="1040" font-size="10" fill="#ff6644" text-anchor="middle">حد أدنى محلي</text>
+
+  <!-- Dashed projection -->
+  <line x1="280" y1="1140" x2="280" y2="1160" stroke="#ff664466" stroke-width="1" stroke-dasharray="3"/>
+  <line x1="440" y1="1050" x2="440" y2="1160" stroke="#ff664466" stroke-width="1" stroke-dasharray="3"/>
+
+  <!-- Domain highlight -->
+  <rect x="60" y="1162" width="780" height="6" fill="#3344ff44" rx="3"/>
+  <text x="450" y="1182" font-size="11" fill="#8899ff" text-anchor="middle">← مجال التعريف Dƒ (الإسقاط على محور x) →</text>
+
+  <!-- legend -->
+  <text x="870" y="1095" font-size="11" fill="#77aaff" text-anchor="end">فاصلة النقطة على المنحنى → تنتمي لـ Dƒ</text>
+  <text x="870" y="1112" font-size="11" fill="#77aaff" text-anchor="end">نقطة مفتوحة ○ → القيمة مستثناة من Dƒ</text>
+  <text x="870" y="1129" font-size="11" fill="#77aaff" text-anchor="end">مقاربة رأسية → قيمة مستثناة (المقام = 0)</text>
+
+  <!-- Footer -->
+  <rect x="0" y="1370" width="900" height="30" fill="url(#bannerGrad)" rx="8"/>
+  <text x="450" y="1390" font-size="12" fill="#ccddff" text-anchor="middle">2AS-DZ · الرياضيات · الفصل الأول · الدوال العددية</text>
+</svg>

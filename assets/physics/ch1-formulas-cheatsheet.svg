@@ -1,0 +1,270 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 1500" font-family="'Arial', sans-serif" direction="rtl">
+  <rect width="900" height="1500" fill="#0c0e14" rx="16"/>
+  <defs>
+    <linearGradient id="bannerPhy" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#cc5500;stop-opacity:1"/>
+      <stop offset="100%" style="stop-color:#882200;stop-opacity:1"/>
+    </linearGradient>
+    <linearGradient id="cA" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#1e1a0a;stop-opacity:1"/>
+      <stop offset="100%" style="stop-color:#151208;stop-opacity:1"/>
+    </linearGradient>
+    <linearGradient id="cB" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#0a1e0a;stop-opacity:1"/>
+      <stop offset="100%" style="stop-color:#081508;stop-opacity:1"/>
+    </linearGradient>
+    <linearGradient id="cC" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#0a1020;stop-opacity:1"/>
+      <stop offset="100%" style="stop-color:#080c18;stop-opacity:1"/>
+    </linearGradient>
+    <linearGradient id="cD" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#1a0a1a;stop-opacity:1"/>
+      <stop offset="100%" style="stop-color:#120812;stop-opacity:1"/>
+    </linearGradient>
+    <filter id="sh">
+      <feDropShadow dx="0" dy="4" stdDeviation="6" flood-color="#000" flood-opacity="0.5"/>
+    </filter>
+    <marker id="arrow" markerWidth="6" markerHeight="6" refX="3" refY="3" orient="auto">
+      <path d="M0,0 L6,3 L0,6 Z" fill="#ff8844"/>
+    </marker>
+    <marker id="arrowG" markerWidth="6" markerHeight="6" refX="3" refY="3" orient="auto">
+      <path d="M0,0 L6,3 L0,6 Z" fill="#44cc88"/>
+    </marker>
+    <marker id="arrowB" markerWidth="6" markerHeight="6" refX="3" refY="3" orient="auto">
+      <path d="M0,0 L6,3 L0,6 Z" fill="#4488ff"/>
+    </marker>
+  </defs>
+
+  <!-- Header -->
+  <rect x="0" y="0" width="900" height="90" fill="url(#bannerPhy)" rx="16"/>
+  <rect x="0" y="74" width="900" height="16" fill="url(#bannerPhy)"/>
+  <text x="450" y="38" font-size="26" font-weight="bold" fill="white" text-anchor="middle">⚡ فيزياء — الفصل الأول</text>
+  <text x="450" y="68" font-size="16" fill="#ffcc99" text-anchor="middle">الطاقة الميكانيكية · ملخص القوانين والتمثيلات</text>
+
+  <!-- ═══════════════════════════════════════════════════ -->
+  <!-- CARD 1: العمل الميكانيكي -->
+  <!-- ═══════════════════════════════════════════════════ -->
+  <rect x="20" y="106" width="860" height="260" fill="url(#cA)" rx="12" filter="url(#sh)" stroke="#cc6600" stroke-width="1.5"/>
+  <rect x="20" y="106" width="8" height="260" fill="#cc6600" rx="4"/>
+  <text x="870" y="130" font-size="15" fill="#ffaa44" text-anchor="end" font-weight="bold">① العمل الميكانيكي لقوة ثابتة</text>
+
+  <!-- Formula box -->
+  <rect x="36" y="140" width="860" height="54" fill="#2a1800" rx="8" stroke="#cc660055" stroke-width="1"/>
+  <text x="855" y="162" font-size="16" fill="#ffaa33" text-anchor="end" font-weight="bold">W_AB(F⃗) = F⃗ · AB⃗ = F × AB × cos(α)</text>
+  <text x="855" y="186" font-size="12" fill="#cc8844" text-anchor="end">F: شدة القوة (N)  ،  AB: طول المسار (m)  ،  α: الزاوية بين F⃗ و AB⃗</text>
+
+  <!-- Nature of work -->
+  <text x="870" y="210" font-size="12" fill="#ffcc88" text-anchor="end">طبيعة العمل حسب الزاوية α</text>
+  <rect x="36" y="214" width="270" height="50" fill="#1a0a00" rx="6" stroke="#44ff8844" stroke-width="1"/>
+  <text x="300" y="234" font-size="12" fill="#44ff88" text-anchor="end" font-weight="bold">0° ≤ α &lt; 90° → W &gt; 0</text>
+  <text x="300" y="256" font-size="11" fill="#33cc66" text-anchor="end">عمل محرك (مع الحركة)</text>
+
+  <rect x="320" y="214" width="270" height="50" fill="#1a0a00" rx="6" stroke="#ffff4444" stroke-width="1"/>
+  <text x="584" y="234" font-size="12" fill="#ffff44" text-anchor="end" font-weight="bold">α = 90° → W = 0</text>
+  <text x="584" y="256" font-size="11" fill="#cccc33" text-anchor="end">عمل معدوم (عمودي على الحركة)</text>
+
+  <rect x="606" y="214" width="268" height="50" fill="#1a0a00" rx="6" stroke="#ff444444" stroke-width="1"/>
+  <text x="866" y="234" font-size="12" fill="#ff4444" text-anchor="end" font-weight="bold">90° &lt; α ≤ 180° → W &lt; 0</text>
+  <text x="866" y="256" font-size="11" fill="#cc3333" text-anchor="end">عمل مقاوم (ضد الحركة)</text>
+
+  <!-- Special forces -->
+  <text x="870" y="280" font-size="12" fill="#ffcc88" text-anchor="end">قوى خاصة</text>
+  <rect x="36" y="284" width="398" height="38" fill="#1a1000" rx="6"/>
+  <text x="428" y="300" font-size="12" fill="#ff9944" text-anchor="end" font-weight="bold">W_AB(P⃗) = ±mgh</text>
+  <text x="428" y="315" font-size="11" fill="#cc7733" text-anchor="end">عمل الثقل: +mgh نزولاً ، −mgh صعوداً</text>
+
+  <rect x="448" y="284" width="416" height="38" fill="#1a1000" rx="6"/>
+  <text x="858" y="300" font-size="12" fill="#ff9944" text-anchor="end" font-weight="bold">W_AB(f⃗) = −f × AB</text>
+  <text x="858" y="315" font-size="11" fill="#cc7733" text-anchor="end">عمل الاحتكاك: دائماً سالب (مقاوم)</text>
+
+  <!-- Visual: inclined plane -->
+  <g transform="translate(60,330)">
+    <!-- slope -->
+    <polygon points="0,80 180,80 180,0" fill="#1a1500" stroke="#554400" stroke-width="1.5"/>
+    <text x="90" y="55" font-size="10" fill="#887755" text-anchor="middle">α</text>
+    <!-- block -->
+    <rect x="110" y="30" width="28" height="22" fill="#334455" stroke="#5588aa" stroke-width="1" transform="rotate(-24, 124, 41)"/>
+    <!-- weight arrow -->
+    <line x1="124" y1="41" x2="124" y2="80" stroke="#ff6644" stroke-width="2" marker-end="url(#arrow)"/>
+    <text x="130" y="70" font-size="10" fill="#ff6644" text-anchor="start">P⃗=mg</text>
+    <!-- friction arrow -->
+    <line x1="105" y1="35" x2="70" y2="50" stroke="#ff4444" stroke-width="2" marker-end="url(#arrow)"/>
+    <text x="55" y="47" font-size="10" fill="#ff4444" text-anchor="end">f⃗</text>
+    <!-- normal -->
+    <line x1="124" y1="35" x2="140" y2="10" stroke="#44cc88" stroke-width="2" marker-end="url(#arrowG)"/>
+    <text x="145" y="9" font-size="10" fill="#44cc88" text-anchor="start">N⃗</text>
+    <!-- labels -->
+    <text x="0" y="95" font-size="10" fill="#776655" text-anchor="start">h</text>
+    <line x1="180" y1="0" x2="180" y2="80" stroke="#556" stroke-width="1" stroke-dasharray="3"/>
+  </g>
+
+  <!-- ═══════════════════════════════════════════════════ -->
+  <!-- CARD 2: الطاقة الحركية -->
+  <!-- ═══════════════════════════════════════════════════ -->
+  <rect x="20" y="382" width="860" height="240" fill="url(#cB)" rx="12" filter="url(#sh)" stroke="#228844" stroke-width="1.5"/>
+  <rect x="20" y="382" width="8" height="240" fill="#228844" rx="4"/>
+  <text x="870" y="406" font-size="15" fill="#44cc88" text-anchor="end" font-weight="bold">② الطاقة الحركية ومبرهنتها</text>
+
+  <!-- Ec formula -->
+  <rect x="36" y="416" width="398" height="54" fill="#082008" rx="8" stroke="#228844" stroke-width="1.5"/>
+  <text x="428" y="440" font-size="18" fill="#44ff88" text-anchor="end" font-weight="bold">Ec = ½mv²</text>
+  <text x="428" y="460" font-size="12" fill="#33aa55" text-anchor="end">m: الكتلة (kg) ،  v: السرعة (m/s) ،  Ec بالجول (J)</text>
+
+  <!-- Theorem -->
+  <rect x="448" y="416" width="416" height="54" fill="#082008" rx="8" stroke="#44aa44" stroke-width="1"/>
+  <text x="858" y="435" font-size="13" fill="#44cc88" text-anchor="end" font-weight="bold">مبرهنة الطاقة الحركية</text>
+  <text x="858" y="455" font-size="12" fill="#33aa55" text-anchor="end">ΔEc = Ec(B) − Ec(A) = Σ W_AB(F⃗ext)</text>
+  <text x="858" y="470" font-size="11" fill="#227744" text-anchor="end">½mv²_B − ½mv²_A = ΣW</text>
+
+  <!-- Rotation Ec -->
+  <text x="870" y="490" font-size="12" fill="#88ffcc" text-anchor="end">الطاقة الحركية الدورانية (حركة دوران)</text>
+  <rect x="36" y="494" width="398" height="54" fill="#041510" rx="8" stroke="#115533" stroke-width="1"/>
+  <text x="428" y="516" font-size="16" fill="#44ffaa" text-anchor="end" font-weight="bold">Ec(rot) = ½ J_Δ ω²</text>
+  <text x="428" y="534" font-size="11" fill="#33aa77" text-anchor="end">J_Δ: عزم القصور الذاتي (kg·m²) ،  ω: السرعة الزاوية (rad/s)</text>
+
+  <!-- Huygens -->
+  <rect x="448" y="494" width="416" height="54" fill="#041510" rx="8" stroke="#115533" stroke-width="1"/>
+  <text x="858" y="512" font-size="13" fill="#44ffaa" text-anchor="end" font-weight="bold">مبرهنة هوغنز (Huygens)</text>
+  <text x="858" y="530" font-size="12" fill="#33aa77" text-anchor="end">J_Δ = J_G + M·d²</text>
+  <text x="858" y="546" font-size="11" fill="#227755" text-anchor="end">J_G: عزم بالنسبة للمركز ،  d: المسافة بين المحورين</text>
+
+  <!-- Moments table -->
+  <text x="870" y="566" font-size="12" fill="#88ffcc" text-anchor="end">عزوم القصور الذاتي للأجسام الشائعة</text>
+  <rect x="36" y="570" width="830" height="40" fill="#041510" rx="6"/>
+  <text x="855" y="585" font-size="11" fill="#44ffaa" text-anchor="end">أسطوانة مصمتة (محور مركزي):  J = ½MR²</text>
+  <text x="855" y="602" font-size="11" fill="#44ffaa" text-anchor="end">قضيب رفيع (محور بالطرف):  J = ⅓ML²   |   قضيب (محور بالمنتصف):  J = ¹⁄₁₂ML²</text>
+
+  <!-- ═══════════════════════════════════════════════════ -->
+  <!-- CARD 3: الطاقة الكامنة والميكانيكية -->
+  <!-- ═══════════════════════════════════════════════════ -->
+  <rect x="20" y="636" width="860" height="270" fill="url(#cC)" rx="12" filter="url(#sh)" stroke="#3355cc" stroke-width="1.5"/>
+  <rect x="20" y="636" width="8" height="270" fill="#3355cc" rx="4"/>
+  <text x="870" y="660" font-size="15" fill="#6688ff" text-anchor="end" font-weight="bold">③ الطاقة الكامنة والطاقة الميكانيكية</text>
+
+  <!-- Epp -->
+  <rect x="36" y="672" width="398" height="60" fill="#080c22" rx="8" stroke="#3344aa" stroke-width="1"/>
+  <text x="428" y="692" font-size="14" fill="#6688ff" text-anchor="end" font-weight="bold">Epp = mgz</text>
+  <text x="428" y="710" font-size="12" fill="#4466cc" text-anchor="end">الطاقة الكامنة الثقالية</text>
+  <text x="428" y="726" font-size="11" fill="#335599" text-anchor="end">z: الارتفاع بالمتر ، المرجع الاختياري</text>
+
+  <!-- Epe -->
+  <rect x="448" y="672" width="416" height="60" fill="#080c22" rx="8" stroke="#3344aa" stroke-width="1"/>
+  <text x="858" y="692" font-size="14" fill="#6688ff" text-anchor="end" font-weight="bold">Epe = ½kx²</text>
+  <text x="858" y="710" font-size="12" fill="#4466cc" text-anchor="end">الطاقة الكامنة المرنة (النابض)</text>
+  <text x="858" y="726" font-size="11" fill="#335599" text-anchor="end">k: ثابت النابض (N/m) ،  x: الإطالة (m)</text>
+
+  <!-- Em -->
+  <rect x="36" y="744" width="830" height="50" fill="#0a0f2a" rx="8" stroke="#5577ee" stroke-width="1.5"/>
+  <text x="855" y="762" font-size="16" fill="#88aaff" text-anchor="end" font-weight="bold">Em = Ec + Ep = Ec + Epp + Epe</text>
+  <text x="855" y="785" font-size="12" fill="#5577cc" text-anchor="end">الطاقة الميكانيكية = الطاقة الحركية + مجموع الطاقات الكامنة</text>
+
+  <!-- Conservation laws -->
+  <rect x="36" y="804" width="398" height="58" fill="#050a20" rx="8" stroke="#2244aa55" stroke-width="1"/>
+  <text x="428" y="824" font-size="13" fill="#44aaff" text-anchor="end" font-weight="bold">حفظ الطاقة الميكانيكية</text>
+  <text x="428" y="842" font-size="12" fill="#3388cc" text-anchor="end">Em(A) = Em(B)  ⟹  ΔEm = 0</text>
+  <text x="428" y="858" font-size="11" fill="#224488" text-anchor="end">شرط: غياب قوى الاحتكاك</text>
+
+  <rect x="448" y="804" width="416" height="58" fill="#050a20" rx="8" stroke="#2244aa55" stroke-width="1"/>
+  <text x="858" y="824" font-size="13" fill="#44aaff" text-anchor="end" font-weight="bold">تناقص الطاقة الميكانيكية</text>
+  <text x="858" y="842" font-size="12" fill="#3388cc" text-anchor="end">ΔEm = Em(B) − Em(A) = W_AB(f⃗) = −f·AB</text>
+  <text x="858" y="858" font-size="11" fill="#224488" text-anchor="end">قوة الاحتكاك تُنقص الطاقة الميكانيكية</text>
+
+  <!-- ═══════════════════════════════════════════════════ -->
+  <!-- CARD 4: الطاقة الداخلية والتحويلات الحرارية -->
+  <!-- ═══════════════════════════════════════════════════ -->
+  <rect x="20" y="920" width="860" height="250" fill="url(#cD)" rx="12" filter="url(#sh)" stroke="#aa33aa" stroke-width="1.5"/>
+  <rect x="20" y="920" width="8" height="250" fill="#aa33aa" rx="4"/>
+  <text x="870" y="944" font-size="15" fill="#dd88ff" text-anchor="end" font-weight="bold">④ الطاقة الداخلية والتحويلات الحرارية</text>
+
+  <!-- Energy conservation -->
+  <rect x="36" y="956" width="830" height="50" fill="#1a0820" rx="8" stroke="#aa33aa55" stroke-width="1"/>
+  <text x="855" y="977" font-size="15" fill="#dd88ff" text-anchor="end" font-weight="bold">E_finale = E_initiale + E_reçue − |E_cédée|</text>
+  <text x="855" y="996" font-size="11" fill="#9966cc" text-anchor="end">مبدأ حفظ الطاقة: الطاقة لا تُخلق ولا تُفنى بل تتحول</text>
+
+  <!-- Heat transfer -->
+  <rect x="36" y="1016" width="398" height="70" fill="#0f0515" rx="8" stroke="#882288" stroke-width="1"/>
+  <text x="428" y="1036" font-size="13" fill="#dd88ff" text-anchor="end" font-weight="bold">Q = m·c·ΔT</text>
+  <text x="428" y="1054" font-size="12" fill="#aa66cc" text-anchor="end">الحرارة المتبادلة بالتوصيل</text>
+  <text x="428" y="1072" font-size="11" fill="#884499" text-anchor="end">c: الحرارة النوعية (J/kg·°C) ،  ΔT = T_f − T_i</text>
+
+  <rect x="448" y="1016" width="416" height="70" fill="#0f0515" rx="8" stroke="#882288" stroke-width="1"/>
+  <text x="858" y="1036" font-size="13" fill="#dd88ff" text-anchor="end" font-weight="bold">Q = L × Δm</text>
+  <text x="858" y="1054" font-size="12" fill="#aa66cc" text-anchor="end">حرارة التحول الطوري (Chaleur latente)</text>
+  <text x="858" y="1072" font-size="11" fill="#884499" text-anchor="end">L: الحرارة الكامنة (J/kg) ،  Δm: الكتلة المتحولة (kg)</text>
+
+  <!-- Energy transforms diagram -->
+  <rect x="36" y="1096" width="830" height="62" fill="#0a0310" rx="8"/>
+  <!-- boxes -->
+  <rect x="60" y="1108" width="130" height="36" fill="#2a0a2a" rx="6" stroke="#aa33aa" stroke-width="1"/>
+  <text x="125" y="1129" font-size="11" fill="#dd88ff" text-anchor="middle">طاقة كيميائية</text>
+
+  <line x1="190" y1="1126" x2="260" y2="1126" stroke="#cc44cc" stroke-width="1.5" marker-end="url(#arrow)"/>
+  <text x="225" y="1116" font-size="10" fill="#aa55aa" text-anchor="middle">W / Q</text>
+
+  <rect x="262" y="1108" width="140" height="36" fill="#0a2a0a" rx="6" stroke="#33aa44" stroke-width="1"/>
+  <text x="332" y="1129" font-size="11" fill="#44ff88" text-anchor="middle">طاقة ميكانيكية</text>
+
+  <line x1="402" y1="1126" x2="470" y2="1126" stroke="#cc44cc" stroke-width="1.5" marker-end="url(#arrow)"/>
+  <text x="436" y="1116" font-size="10" fill="#aa55aa" text-anchor="middle">Q_احتكاك</text>
+
+  <rect x="472" y="1108" width="140" height="36" fill="#2a1a0a" rx="6" stroke="#aa6633" stroke-width="1"/>
+  <text x="542" y="1129" font-size="11" fill="#ffaa44" text-anchor="middle">طاقة داخلية</text>
+
+  <line x1="612" y1="1126" x2="680" y2="1126" stroke="#cc44cc" stroke-width="1.5" marker-end="url(#arrow)"/>
+  <text x="646" y="1116" font-size="10" fill="#aa55aa" text-anchor="middle">إشعاع</text>
+
+  <rect x="682" y="1108" width="140" height="36" fill="#0a1a2a" rx="6" stroke="#3366aa" stroke-width="1"/>
+  <text x="752" y="1129" font-size="11" fill="#6699ff" text-anchor="middle">طاقة ضوئية/حرارية</text>
+
+  <!-- ═══════════════════════════════════════════════════ -->
+  <!-- CARD 5: ملخص المعادلات والوحدات -->
+  <!-- ═══════════════════════════════════════════════════ -->
+  <rect x="20" y="1184" width="860" height="220" fill="#080c0c" rx="12" filter="url(#sh)" stroke="#336655" stroke-width="1.5"/>
+  <text x="870" y="1208" font-size="15" fill="#88ccaa" text-anchor="end" font-weight="bold">⑤ جدول ملخص · الوحدات والمعادلات</text>
+
+  <!-- Table header -->
+  <rect x="36" y="1216" width="830" height="26" fill="#0d2020" rx="4"/>
+  <text x="855" y="1233" font-size="13" fill="#88ffcc" text-anchor="end">الكمية الفيزيائية</text>
+  <text x="530" y="1233" font-size="13" fill="#88ffcc" text-anchor="middle">المعادلة / القانون</text>
+  <text x="140" y="1233" font-size="13" fill="#88ffcc" text-anchor="middle">الوحدة</text>
+
+  <!-- Rows -->
+  <rect x="36" y="1242" width="830" height="22" fill="#050e0e" rx="2"/>
+  <text x="855" y="1257" font-size="11" fill="#ddeeff" text-anchor="end">العمل الميكانيكي W</text>
+  <text x="530" y="1257" font-size="11" fill="#aaccaa" text-anchor="middle">W = F·d·cos α</text>
+  <text x="140" y="1257" font-size="12" fill="#ffdd44" text-anchor="middle" font-weight="bold">جول (J)</text>
+
+  <rect x="36" y="1264" width="830" height="22" fill="#060f0f" rx="2"/>
+  <text x="855" y="1279" font-size="11" fill="#ddeeff" text-anchor="end">الطاقة الحركية Ec</text>
+  <text x="530" y="1279" font-size="11" fill="#aaccaa" text-anchor="middle">Ec = ½mv²</text>
+  <text x="140" y="1279" font-size="12" fill="#ffdd44" text-anchor="middle" font-weight="bold">جول (J)</text>
+
+  <rect x="36" y="1286" width="830" height="22" fill="#050e0e" rx="2"/>
+  <text x="855" y="1301" font-size="11" fill="#ddeeff" text-anchor="end">الطاقة الكامنة الثقالية Epp</text>
+  <text x="530" y="1301" font-size="11" fill="#aaccaa" text-anchor="middle">Epp = mgz</text>
+  <text x="140" y="1301" font-size="12" fill="#ffdd44" text-anchor="middle" font-weight="bold">جول (J)</text>
+
+  <rect x="36" y="1308" width="830" height="22" fill="#060f0f" rx="2"/>
+  <text x="855" y="1323" font-size="11" fill="#ddeeff" text-anchor="end">الطاقة الكامنة المرنة Epe</text>
+  <text x="530" y="1323" font-size="11" fill="#aaccaa" text-anchor="middle">Epe = ½kx²</text>
+  <text x="140" y="1323" font-size="12" fill="#ffdd44" text-anchor="middle" font-weight="bold">جول (J)</text>
+
+  <rect x="36" y="1330" width="830" height="22" fill="#050e0e" rx="2"/>
+  <text x="855" y="1345" font-size="11" fill="#ddeeff" text-anchor="end">الطاقة الميكانيكية Em</text>
+  <text x="530" y="1345" font-size="11" fill="#aaccaa" text-anchor="middle">Em = Ec + Epp + Epe</text>
+  <text x="140" y="1345" font-size="12" fill="#ffdd44" text-anchor="middle" font-weight="bold">جول (J)</text>
+
+  <rect x="36" y="1352" width="830" height="22" fill="#060f0f" rx="2"/>
+  <text x="855" y="1367" font-size="11" fill="#ddeeff" text-anchor="end">عزم القصور الذاتي J</text>
+  <text x="530" y="1367" font-size="11" fill="#aaccaa" text-anchor="middle">J = ½MR² (أسطوانة) ، J_Δ=J_G+Md²</text>
+  <text x="140" y="1367" font-size="12" fill="#ffdd44" text-anchor="middle" font-weight="bold">kg·m²</text>
+
+  <rect x="36" y="1374" width="830" height="22" fill="#050e0e" rx="2"/>
+  <text x="855" y="1389" font-size="11" fill="#ddeeff" text-anchor="end">الحرارة المنقولة Q</text>
+  <text x="530" y="1389" font-size="11" fill="#aaccaa" text-anchor="middle">Q = mcΔT  أو  Q = LΔm</text>
+  <text x="140" y="1389" font-size="12" fill="#ffdd44" text-anchor="middle" font-weight="bold">جول (J)</text>
+
+  <!-- Footer -->
+  <rect x="0" y="1468" width="900" height="32" fill="url(#bannerPhy)" rx="8"/>
+  <text x="450" y="1489" font-size="12" fill="#ffddcc" text-anchor="middle">2AS-DZ · الفيزياء · الفصل الأول · الطاقة الميكانيكية</text>
+</svg>
