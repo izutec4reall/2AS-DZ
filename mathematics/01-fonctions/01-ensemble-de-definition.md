@@ -97,7 +97,7 @@ $$f(x) = \sqrt{x - 3}$$
 | $f(x) = \dfrac{g(x)}{\sqrt{h(x)}}$ | $h(x) > 0$ | $D_f = \{x \in \mathbb{R} \mid h(x) > 0\}$ |
 | $f(x) = \sqrt{g(x)} + \dfrac{h(x)}{k(x)}$ | $g(x) \ge 0 \text{ و } k(x) \neq 0$ | $D_f = \{x \in \mathbb{R} \mid g(x) \ge 0 \land k(x) \neq 0\}$ |
 | $f(x) = \dfrac{\sqrt{g(x)}}{\sqrt{h(x)}}$ | $g(x) \ge 0 \text{ و } h(x) > 0$ | $D_f = \{x \in \mathbb{R} \mid g(x) \ge 0 \land h(x) > 0\}$ |
-| $f(x) = \sqrt{\dfrac{g(x)}{h(x)}}$ | $\dfrac{g(x)}{h(x)} \ge 0 \text{ و } h(x) \neq 0$ | $D_f = \left\{x \in \mathbb{R} \;\middle|\; \dfrac{g(x)}{h(x)} \ge 0 \land h(x) \neq 0\right\}$ |
+| $f(x) = \sqrt{\dfrac{g(x)}{h(x)}}$ | $\dfrac{g(x)}{h(x)} \ge 0 \text{ و } h(x) \neq 0$ | $D_f = \{x \in \mathbb{R} \mid \dfrac{g(x)}{h(x)} \ge 0 \land h(x) \neq 0\}$ |
 
 *(حيث $g(x)$ و $h(x)$ و $k(x)$ دوال كثيرات حدود).*
 
