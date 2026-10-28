@@ -1,0 +1,44 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 450" width="100%" height="auto">
+  <rect width="100%" height="100%" fill="#ffffff" rx="12"/>
+  <rect x="15" y="15" width="770" height="420" fill="#f8fafc" rx="8" stroke="#e2e8f0"/>
+  <text x="400" y="45" font-family="sans-serif" font-size="20" font-weight="bold" fill="#0f172a" text-anchor="middle">
+    تطبيقات الاشتقاقية: اتجاه التغير، القيم الحدية، ونقطة الانعطاف
+  </text>
+  <text x="400" y="70" font-family="sans-serif" font-size="14" fill="#64748b" text-anchor="middle">
+    العلاقة بين إشارة المشتقة f'(x) والتغيرات، وانعدام المشتقة مع تغيير الإشارة
+  </text>
+
+  <!-- Curve with local max, local min, inflection point -->
+  <line x1="80" y1="360" x2="720" y2="360" stroke="#334155" stroke-width="2"/>
+  <line x1="120" y1="390" x2="120" y2="90" stroke="#334155" stroke-width="2"/>
+
+  <!-- Cubic curve: local max at (260, 160), inflection at (400, 230), local min at (540, 300) -->
+  <path d="M 160 300 C 210 130 310 130 400 230 C 490 330 590 330 640 160" fill="none" stroke="#2563eb" stroke-width="3.5"/>
+  <text x="650" y="170" font-family="sans-serif" font-size="16" font-weight="bold" fill="#2563eb">(Cf)</text>
+
+  <!-- Local Max A(260, 160) -->
+  <circle cx="260" cy="160" r="5" fill="#059669"/>
+  <line x1="200" y1="160" x2="320" y2="160" stroke="#059669" stroke-width="2"/>
+  <text x="260" y="140" font-family="sans-serif" font-size="13" font-weight="bold" fill="#059669" text-anchor="middle">ذروة عظمى محلية (f'=0)</text>
+
+  <!-- Inflection Point I(400, 230) -->
+  <circle cx="400" cy="230" r="6" fill="#dc2626"/>
+  <!-- Tangent line that crosses the curve at I -->
+  <line x1="330" y1="310" x2="470" y2="150" stroke="#dc2626" stroke-width="2" stroke-dasharray="4,4"/>
+  <text x="420" y="245" font-family="sans-serif" font-size="14" font-weight="bold" fill="#dc2626">نقطة انعطاف I (المماس يخترق المنحنى)</text>
+
+  <!-- Local Min B(540, 300) -->
+  <circle cx="540" cy="300" r="5" fill="#059669"/>
+  <line x1="480" y1="300" x2="600" y2="300" stroke="#059669" stroke-width="2"/>
+  <text x="540" y="325" font-family="sans-serif" font-size="13" font-weight="bold" fill="#059669" text-anchor="middle">قيمة حدية صغرى محلية (f'=0)</text>
+
+  <!-- Regions of increase / decrease -->
+  <rect x="50" y="85" width="220" height="40" fill="#f0fdf4" rx="5" stroke="#86efac"/>
+  <text x="160" y="110" font-family="sans-serif" font-size="12" font-weight="bold" fill="#166534" text-anchor="middle">f'(x) &gt; 0 : دالة متزايدة تماماً</text>
+
+  <rect x="290" y="85" width="220" height="40" fill="#fef2f2" rx="5" stroke="#fca5a5"/>
+  <text x="400" y="110" font-family="sans-serif" font-size="12" font-weight="bold" fill="#991b1b" text-anchor="middle">f'(x) &lt; 0 : دالة متناقصة تماماً</text>
+
+  <rect x="530" y="85" width="220" height="40" fill="#eff6ff" rx="5" stroke="#93c5fd"/>
+  <text x="640" y="110" font-family="sans-serif" font-size="12" font-weight="bold" fill="#1e40af" text-anchor="middle">f''(x) = 0 : نقطة الانعطاف</text>
+</svg>

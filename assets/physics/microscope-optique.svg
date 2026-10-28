@@ -1,0 +1,88 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 850 480" width="100%" height="auto">
+  <defs>
+    <marker id="arr-mic" viewBox="0 0 10 10" refX="6" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M 0 1 L 10 5 L 0 9 z" fill="#dc2626"/>
+    </marker>
+    <marker id="arr-mic2" viewBox="0 0 10 10" refX="6" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M 0 1 L 10 5 L 0 9 z" fill="#2563eb"/>
+    </marker>
+  </defs>
+  <rect width="100%" height="100%" fill="#ffffff" rx="12"/>
+  <rect x="15" y="15" width="820" height="450" fill="#f8fafc" rx="8" stroke="#cbd5e1" stroke-width="1.5"/>
+
+  <text x="425" y="42" font-family="sans-serif" font-size="20" font-weight="bold" fill="#0f172a" text-anchor="middle">
+    النموذج البصري للمجهر المركب (Modèle Optique du Microscope)
+  </text>
+  <text x="425" y="66" font-family="sans-serif" font-size="13" fill="#64748b" text-anchor="middle">
+    الشيئية (Objectif L₁) تعطي صورة وسيطية حقيقية A₁B₁، والعينية (Oculaire L₂) تعمل كمكبرة
+  </text>
+
+  <!-- Principal Optical Axis Δ -->
+  <line x1="40" y1="230" x2="810" y2="230" stroke="#334155" stroke-width="2"/>
+  <text x="815" y="235" font-family="sans-serif" font-size="14" font-weight="bold" fill="#334155">Δ</text>
+
+  <!-- Lens 1: Objective (x = 240, short focal length f'1 = 50) -->
+  <line x1="240" y1="360" x2="240" y2="100" stroke="#2563eb" stroke-width="2.5"/>
+  <polygon points="240,95 234,110 246,110" fill="#2563eb"/>
+  <polygon points="240,365 234,350 246,350" fill="#2563eb"/>
+  <text x="240" y="85" font-family="sans-serif" font-size="13" font-weight="bold" fill="#2563eb" text-anchor="middle">الشيئية (L₁)</text>
+  <circle cx="240" cy="230" r="4" fill="#0f172a"/>
+  <text x="240" y="248" font-family="sans-serif" font-size="12" font-weight="bold" fill="#0f172a" text-anchor="middle">O₁</text>
+
+  <!-- Foci of L1: F1 at 180, F'1 at 300 -->
+  <circle cx="180" cy="230" r="3.5" fill="#dc2626"/>
+  <text x="180" y="250" font-family="sans-serif" font-size="11" font-weight="bold" fill="#dc2626" text-anchor="middle">F₁</text>
+  <circle cx="300" cy="230" r="3.5" fill="#dc2626"/>
+  <text x="300" y="250" font-family="sans-serif" font-size="11" font-weight="bold" fill="#dc2626" text-anchor="middle">F'₁</text>
+
+  <!-- Lens 2: Eyepiece (x = 640, focal length f'2 = 80) -->
+  <line x1="640" y1="370" x2="640" y2="90" stroke="#7c3aed" stroke-width="2.5"/>
+  <polygon points="640,85 634,100 646,100" fill="#7c3aed"/>
+  <polygon points="640,375 634,360 646,360" fill="#7c3aed"/>
+  <text x="640" y="80" font-family="sans-serif" font-size="13" font-weight="bold" fill="#7c3aed" text-anchor="middle">العينية (L₂)</text>
+  <circle cx="640" cy="230" r="4" fill="#0f172a"/>
+  <text x="640" y="248" font-family="sans-serif" font-size="12" font-weight="bold" fill="#0f172a" text-anchor="middle">O₂</text>
+
+  <!-- Foci of L2: F2 at 560 (coincides with A1), F'2 at 720 -->
+  <circle cx="560" cy="230" r="4" fill="#dc2626"/>
+  <text x="560" y="250" font-family="sans-serif" font-size="11" font-weight="bold" fill="#dc2626" text-anchor="middle">F₂</text>
+  <circle cx="720" cy="230" r="3.5" fill="#dc2626"/>
+  <text x="720" y="250" font-family="sans-serif" font-size="11" font-weight="bold" fill="#dc2626" text-anchor="middle">F'₂</text>
+
+  <!-- Optical Interval Δ = F'1 F2 (between 300 and 560) -->
+  <line x1="300" y1="210" x2="560" y2="210" stroke="#059669" stroke-width="2"/>
+  <line x1="300" y1="205" x2="300" y2="215" stroke="#059669" stroke-width="2"/>
+  <line x1="560" y1="205" x2="560" y2="215" stroke="#059669" stroke-width="2"/>
+  <text x="430" y="200" font-family="sans-serif" font-size="13" font-weight="bold" fill="#059669" text-anchor="middle">الفاصل البصري Δ = F'₁F₂</text>
+
+  <!-- Object AB (before F1, at x = 140, height = 30) -->
+  <line x1="140" y1="230" x2="140" y2="185" stroke="#0f172a" stroke-width="2.5"/>
+  <polygon points="140,180 136,190 144,190" fill="#0f172a"/>
+  <text x="130" y="245" font-family="sans-serif" font-size="12" font-weight="bold" fill="#0f172a">A</text>
+  <text x="130" y="180" font-family="sans-serif" font-size="12" font-weight="bold" fill="#0f172a">B</text>
+
+  <!-- Intermediate Image A1B1 (real, inverted, located at F2: x = 560, height = 75) -->
+  <line x1="560" y1="230" x2="560" y2="340" stroke="#dc2626" stroke-width="3"/>
+  <polygon points="560,345 555,335 565,335" fill="#dc2626"/>
+  <text x="575" y="245" font-family="sans-serif" font-size="12" font-weight="bold" fill="#dc2626">A₁</text>
+  <text x="575" y="345" font-family="sans-serif" font-size="12" font-weight="bold" fill="#dc2626">B₁</text>
+
+  <!-- Ray tracing through Objective (L1) -->
+  <line x1="140" y1="185" x2="240" y2="185" stroke="#2563eb" stroke-width="1.5"/>
+  <line x1="240" y1="185" x2="560" y2="340" stroke="#2563eb" stroke-width="1.5"/>
+  <line x1="140" y1="185" x2="560" y2="340" stroke="#2563eb" stroke-width="1.5"/>
+
+  <!-- Rays from A1B1 through Eyepiece (L2) to Infinity -->
+  <!-- Parallel beam emerged from L2 -->
+  <line x1="560" y1="340" x2="640" y2="340" stroke="#7c3aed" stroke-width="1.8"/>
+  <line x1="640" y1="340" x2="800" y2="400" stroke="#7c3aed" stroke-width="1.8"/>
+  <line x1="560" y1="340" x2="640" y2="230" stroke="#7c3aed" stroke-width="1.8"/>
+  <line x1="640" y1="230" x2="800" y2="290" stroke="#7c3aed" stroke-width="1.8"/>
+  <text x="760" y="360" font-family="sans-serif" font-size="12" font-weight="bold" fill="#7c3aed">حزمة متوازية (صورة في ∞)</text>
+
+  <!-- Formula Summary -->
+  <rect x="40" y="405" width="770" height="50" fill="#eff6ff" rx="8" stroke="#93c5fd"/>
+  <text x="425" y="435" font-family="sans-serif" font-size="13" font-weight="bold" fill="#1e40af" text-anchor="middle">
+    التكبير التجاري للمجهر: G = |γ₁| · G₂ = (Δ / f'₁) · (d / f'₂)   (حيث d = 0.25 m مسافة الرؤية الواضحة)
+  </text>
+</svg>

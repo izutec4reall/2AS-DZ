@@ -1,0 +1,61 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 480" width="100%" height="auto">
+  <defs>
+    <marker id="arr-bilan" viewBox="0 0 10 10" refX="6" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M 0 1 L 10 5 L 0 9 z" fill="#0f172a"/>
+    </marker>
+  </defs>
+  <rect width="100%" height="100%" fill="#ffffff" rx="12"/>
+  <rect x="15" y="15" width="770" height="450" fill="#f8fafc" rx="8" stroke="#e2e8f0"/>
+  <text x="400" y="45" font-family="sans-serif" font-size="20" font-weight="bold" fill="#0f172a" text-anchor="middle">
+    الرسم البياني للحصيلة الطاقوية ومعادلة انحفاظ الطاقة
+  </text>
+  <text x="400" y="70" font-family="sans-serif" font-size="14" fill="#64748b" text-anchor="middle">
+    الجملة: (جسم + أرض) بين موضعين A و B بسقوط شاقولي مع وجود احتكاك
+  </text>
+
+  <!-- Main System Bubble (Ellipse centered at 400, 230) -->
+  <ellipse cx="400" cy="230" rx="180" ry="120" fill="#ffffff" stroke="#2563eb" stroke-width="3"/>
+  <text x="400" y="140" font-family="sans-serif" font-size="16" font-weight="bold" fill="#1e40af" text-anchor="middle">الجملة : (جسم + أرض)</text>
+
+  <!-- Column 1: Kinetic Energy Ec (increasing from EcA=0 to EcB) -->
+  <g transform="translate(300, 160)">
+    <rect width="55" height="130" fill="#f8fafc" stroke="#334155" stroke-width="2" rx="4"/>
+    <!-- dashed initial level -->
+    <line x1="5" y1="115" x2="50" y2="115" stroke="#94a3b8" stroke-width="1.5" stroke-dasharray="3,3"/>
+    <text x="58" y="118" font-family="sans-serif" font-size="11" fill="#64748b">EcA=0</text>
+    <!-- solid final level -->
+    <line x1="5" y1="25" x2="50" y2="25" stroke="#059669" stroke-width="2"/>
+    <text x="58" y="28" font-family="sans-serif" font-size="11" font-weight="bold" fill="#059669">EcB</text>
+    <!-- Arrow pointing up -->
+    <line x1="27" y1="110" x2="27" y2="35" stroke="#059669" stroke-width="2.5" marker-end="url(#arr-bilan)"/>
+    <text x="27" y="145" font-family="sans-serif" font-size="13" font-weight="bold" fill="#059669" text-anchor="middle">Ec</text>
+  </g>
+
+  <!-- Column 2: Potential Energy Epp (decreasing from EppA to EppB=0) -->
+  <g transform="translate(440, 160)">
+    <rect width="55" height="130" fill="#f8fafc" stroke="#334155" stroke-width="2" rx="4"/>
+    <!-- solid initial level -->
+    <line x1="5" y1="25" x2="50" y2="25" stroke="#dc2626" stroke-width="2"/>
+    <text x="-8" y="28" font-family="sans-serif" font-size="11" font-weight="bold" fill="#dc2626" text-anchor="end">EppA</text>
+    <!-- dashed final level -->
+    <line x1="5" y1="115" x2="50" y2="115" stroke="#94a3b8" stroke-width="1.5" stroke-dasharray="3,3"/>
+    <text x="-8" y="118" font-family="sans-serif" font-size="11" fill="#64748b" text-anchor="end">EppB=0</text>
+    <!-- Arrow pointing down -->
+    <line x1="27" y1="35" x2="27" y2="110" stroke="#dc2626" stroke-width="2.5" marker-end="url(#arr-bilan)"/>
+    <text x="27" y="145" font-family="sans-serif" font-size="13" font-weight="bold" fill="#dc2626" text-anchor="middle">Epp</text>
+  </g>
+
+  <!-- Energy transferred out (Dissipated thermal energy Q due to friction) -->
+  <line x1="580" y1="230" x2="700" y2="230" stroke="#dc2626" stroke-width="3" stroke-dasharray="6,4" marker-end="url(#arr-bilan)"/>
+  <text x="640" y="215" font-family="sans-serif" font-size="14" font-weight="bold" fill="#dc2626" text-anchor="middle">|W(f)| = Q</text>
+  <text x="640" y="255" font-family="sans-serif" font-size="12" fill="#64748b" text-anchor="middle">طاقة ضائعة للوسط الخارجي</text>
+
+  <!-- Conservation equation panel below -->
+  <rect x="100" y="380" width="600" height="60" fill="#ffffff" rx="8" stroke="#3b82f6" stroke-width="1.5"/>
+  <text x="400" y="405" font-family="sans-serif" font-size="14" font-weight="bold" fill="#1e3a8a" text-anchor="middle">
+    معادلة انحفاظ الطاقة : E_finale = E_initiale + E_reçue - |E_cédée|
+  </text>
+  <text x="400" y="428" font-family="sans-serif" font-size="14" font-weight="bold" fill="#059669" text-anchor="middle">
+    Ec(B) + Epp(B) = Ec(A) + Epp(A) - |W(f)|  ==&gt;  ½ m v_B² = m g h - f·d
+  </text>
+</svg>

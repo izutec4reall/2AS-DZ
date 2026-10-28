@@ -1,0 +1,60 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 400" width="100%" height="auto">
+  <rect width="100%" height="100%" fill="#ffffff" rx="12"/>
+  <rect x="15" y="15" width="770" height="370" fill="#f8fafc" rx="8" stroke="#e2e8f0"/>
+
+  <text x="400" y="45" font-family="sans-serif" font-size="20" font-weight="bold" fill="#0f172a" text-anchor="middle">
+    المخطط بالعلبة ومؤشرات التشتت والموقع (Boîte à Moustaches)
+  </text>
+
+  <!-- Number axis (Origin at 100, 320 to 700, 320) -->
+  <line x1="80" y1="310" x2="720" y2="310" stroke="#334155" stroke-width="2"/>
+  
+  <!-- Axis Ticks: Min=150, Q1=280, Med=400, Q3=550, Max=660 -->
+  <g stroke="#64748b" stroke-width="1.5">
+    <line x1="150" y1="310" x2="150" y2="320"/>
+    <line x1="280" y1="310" x2="280" y2="320"/>
+    <line x1="400" y1="310" x2="400" y2="320"/>
+    <line x1="550" y1="310" x2="550" y2="320"/>
+    <line x1="660" y1="310" x2="660" y2="320"/>
+  </g>
+  <text x="150" y="340" font-family="sans-serif" font-size="13" font-weight="bold" fill="#334155" text-anchor="middle">Min = 4</text>
+  <text x="280" y="340" font-family="sans-serif" font-size="13" font-weight="bold" fill="#2563eb" text-anchor="middle">Q₁ = 8</text>
+  <text x="400" y="340" font-family="sans-serif" font-size="13" font-weight="bold" fill="#dc2626" text-anchor="middle">Méd = 11</text>
+  <text x="550" y="340" font-family="sans-serif" font-size="13" font-weight="bold" fill="#2563eb" text-anchor="middle">Q₃ = 15</text>
+  <text x="660" y="340" font-family="sans-serif" font-size="13" font-weight="bold" fill="#334155" text-anchor="middle">Max = 18</text>
+
+  <!-- The Box (from Q1=280 to Q3=550, height=100, y=130 to 230) -->
+  <rect x="280" y="130" width="270" height="100" fill="#dbeafe" stroke="#2563eb" stroke-width="2.5" rx="4"/>
+
+  <!-- Median Line inside box -->
+  <line x1="400" y1="130" x2="400" y2="230" stroke="#dc2626" stroke-width="3"/>
+
+  <!-- Left Whisker: from Min=150 to Q1=280 at y=180 -->
+  <line x1="150" y1="180" x2="280" y2="180" stroke="#334155" stroke-width="2"/>
+  <line x1="150" y1="150" x2="150" y2="210" stroke="#334155" stroke-width="2.5"/>
+
+  <!-- Right Whisker: from Q3=550 to Max=660 at y=180 -->
+  <line x1="550" y1="180" x2="660" y2="180" stroke="#334155" stroke-width="2"/>
+  <line x1="660" y1="150" x2="660" y2="210" stroke="#334155" stroke-width="2.5"/>
+
+  <!-- Vertical Projection Dotted Lines -->
+  <line x1="150" y1="210" x2="150" y2="310" stroke="#94a3b8" stroke-width="1" stroke-dasharray="3,3"/>
+  <line x1="280" y1="230" x2="280" y2="310" stroke="#94a3b8" stroke-width="1" stroke-dasharray="3,3"/>
+  <line x1="400" y1="230" x2="400" y2="310" stroke="#dc2626" stroke-width="1" stroke-dasharray="3,3"/>
+  <line x1="550" y1="230" x2="550" y2="310" stroke="#94a3b8" stroke-width="1" stroke-dasharray="3,3"/>
+  <line x1="660" y1="210" x2="660" y2="310" stroke="#94a3b8" stroke-width="1" stroke-dasharray="3,3"/>
+
+  <!-- Dimension line for Interquartile Range (IQR = Q3 - Q1) -->
+  <line x1="280" y1="100" x2="550" y2="100" stroke="#059669" stroke-width="2"/>
+  <line x1="280" y1="92" x2="280" y2="108" stroke="#059669" stroke-width="2"/>
+  <line x1="550" y1="92" x2="550" y2="108" stroke="#059669" stroke-width="2"/>
+  <text x="415" y="90" font-family="sans-serif" font-size="13" font-weight="bold" fill="#059669" text-anchor="middle">
+    المدى الربيعي (Écart interquartile) : IQR = Q₃ - Q₁ = 7
+  </text>
+
+  <!-- Percentages inside parts -->
+  <text x="215" y="170" font-family="sans-serif" font-size="13" font-weight="bold" fill="#64748b">25%</text>
+  <text x="335" y="185" font-family="sans-serif" font-size="14" font-weight="bold" fill="#1e40af">25%</text>
+  <text x="470" y="185" font-family="sans-serif" font-size="14" font-weight="bold" fill="#1e40af">25%</text>
+  <text x="600" y="170" font-family="sans-serif" font-size="13" font-weight="bold" fill="#64748b">25%</text>
+</svg>

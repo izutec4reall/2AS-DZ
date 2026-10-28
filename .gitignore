@@ -1,0 +1,11 @@
+# Algerian Curriculum Textbooks and Heavy Reference PDFs
+*.pdf
+
+# Generator and Build Scripts
+*.py
+__pycache__/
+*.pyc
+
+# Operating System Files
+.DS_Store
+Thumbs.db

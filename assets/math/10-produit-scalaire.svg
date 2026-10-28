@@ -1,0 +1,74 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 450" width="100%" height="auto">
+  <defs>
+    <marker id="arr-ps" viewBox="0 0 10 10" refX="6" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M 0 1 L 10 5 L 0 9 z" fill="#2563eb"/>
+    </marker>
+    <marker id="arr-ps2" viewBox="0 0 10 10" refX="6" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M 0 1 L 10 5 L 0 9 z" fill="#dc2626"/>
+    </marker>
+  </defs>
+  <rect width="100%" height="100%" fill="#ffffff" rx="12"/>
+  <rect x="15" y="15" width="770" height="420" fill="#f8fafc" rx="8" stroke="#e2e8f0"/>
+  <text x="400" y="45" font-family="sans-serif" font-size="20" font-weight="bold" fill="#0f172a" text-anchor="middle">
+    الجداء السلمي وتطبيقاته الهندسية : u · v = ||u|| · ||v|| · cos θ
+  </text>
+  <text x="400" y="70" font-family="sans-serif" font-size="14" fill="#64748b" text-anchor="middle">
+    الإسقاط العمودي ومبرهنة الكاشي (Théorème d'Al-Kashi) ومبرهنة المتوسط
+  </text>
+
+  <!-- Left: Scalar projection OA . OB = OA . OH -->
+  <g transform="translate(50, 100)">
+    <text x="140" y="20" font-family="sans-serif" font-size="14" font-weight="bold" fill="#1e40af" text-anchor="middle">1. الإسقاط العمودي (Projection)</text>
+    <circle cx="50" cy="190" r="4" fill="#0f172a"/>
+    <text x="35" y="195" font-family="sans-serif" font-size="14" font-weight="bold" fill="#0f172a">O</text>
+
+    <!-- Vector OA along horizontal line -->
+    <line x1="50" y1="190" x2="260" y2="190" stroke="#2563eb" stroke-width="3" marker-end="url(#arr-ps)"/>
+    <circle cx="260" cy="190" r="4" fill="#2563eb"/>
+    <text x="270" y="195" font-family="sans-serif" font-size="14" font-weight="bold" fill="#2563eb">A</text>
+
+    <!-- Vector OB at angle 45 deg -->
+    <line x1="50" y1="190" x2="190" y2="70" stroke="#dc2626" stroke-width="3" marker-end="url(#arr-ps2)"/>
+    <circle cx="190" cy="70" r="4" fill="#dc2626"/>
+    <text x="195" y="65" font-family="sans-serif" font-size="14" font-weight="bold" fill="#dc2626">B</text>
+
+    <!-- Projection H of B onto OA -->
+    <line x1="190" y1="70" x2="190" y2="190" stroke="#059669" stroke-width="2" stroke-dasharray="4,4"/>
+    <circle cx="190" cy="190" r="4" fill="#059669"/>
+    <text x="190" y="212" font-family="sans-serif" font-size="13" font-weight="bold" fill="#059669" text-anchor="middle">H</text>
+
+    <!-- Right angle at H -->
+    <polyline points="180,190 180,180 190,180" fill="none" stroke="#059669" stroke-width="1.5"/>
+
+    <!-- Angle arc θ -->
+    <path d="M 90 190 A 40 40 0 0 0 80 162" fill="none" stroke="#b45309" stroke-width="2"/>
+    <text x="95" y="175" font-family="sans-serif" font-size="13" font-weight="bold" fill="#b45309">θ</text>
+    <text x="140" y="240" font-family="sans-serif" font-size="13" font-weight="bold" fill="#1e40af" text-anchor="middle">OA · OB = OA × OH</text>
+  </g>
+
+  <!-- Right: Al-Kashi Triangle ABC -->
+  <g transform="translate(420, 100)">
+    <text x="160" y="20" font-family="sans-serif" font-size="14" font-weight="bold" fill="#047857" text-anchor="middle">2. مبرهنة الكاشي في مثلث كيفي</text>
+    <!-- Triangle: A(100, 190), B(300, 190), C(180, 60) -->
+    <polygon points="100,190 300,190 180,60" fill="#f0fdf4" stroke="#334155" stroke-width="2"/>
+    <circle cx="100" cy="190" r="4" fill="#1e40af"/>
+    <text x="85" y="195" font-family="sans-serif" font-size="14" font-weight="bold" fill="#1e40af">A</text>
+    <circle cx="300" cy="190" r="4" fill="#1e40af"/>
+    <text x="310" y="195" font-family="sans-serif" font-size="14" font-weight="bold" fill="#1e40af">B</text>
+    <circle cx="180" cy="60" r="4" fill="#1e40af"/>
+    <text x="180" y="50" font-family="sans-serif" font-size="14" font-weight="bold" fill="#1e40af" text-anchor="middle">C</text>
+
+    <!-- Side lengths -->
+    <text x="200" y="210" font-family="sans-serif" font-size="13" font-weight="bold" fill="#dc2626" text-anchor="middle">c = AB</text>
+    <text x="125" y="120" font-family="sans-serif" font-size="13" font-weight="bold" fill="#dc2626">b = AC</text>
+    <text x="250" y="120" font-family="sans-serif" font-size="13" font-weight="bold" fill="#dc2626">a = BC</text>
+
+    <text x="160" y="240" font-family="sans-serif" font-size="13" font-weight="bold" fill="#047857" text-anchor="middle">a² = b² + c² - 2 b c cos(A)</text>
+  </g>
+
+  <!-- Summary Box -->
+  <rect x="50" y="360" width="700" height="50" fill="#ffffff" rx="6" stroke="#cbd5e1"/>
+  <text x="400" y="390" font-family="sans-serif" font-size="13" font-weight="bold" fill="#0f172a" text-anchor="middle">
+    التعامد في المستوي المنسوب لمعلم متعامد ومتجانس : u ⊥ v &lt;==&gt; u · v = 0 &lt;==&gt; x x' + y y' = 0
+  </text>
+</svg>

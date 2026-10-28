@@ -1,0 +1,115 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 450" width="100%" height="auto">
+  <defs>
+    <marker id="arrow" viewBox="0 0 10 10" refX="6" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M 0 1 L 10 5 L 0 9 z" fill="#334155"/>
+    </marker>
+    <marker id="arrow-blue" viewBox="0 0 10 10" refX="6" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M 0 1 L 10 5 L 0 9 z" fill="#2563eb"/>
+    </marker>
+    <filter id="shadow" x="-5%" y="-5%" width="110%" height="110%">
+      <feDropShadow dx="0" dy="4" stdDeviation="6" flood-opacity="0.08"/>
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="100%" height="100%" fill="#ffffff" rx="12"/>
+  <rect x="15" y="15" width="770" height="420" fill="#f8fafc" rx="8" stroke="#e2e8f0" stroke-width="1.5"/>
+
+  <!-- Title -->
+  <text x="400" y="48" font-family="sans-serif" font-size="20" font-weight="bold" fill="#0f172a" text-anchor="middle">
+    التعيين البياني لمجموعة التعريف Df من المنحنى (Cf)
+  </text>
+  <text x="400" y="74" font-family="sans-serif" font-size="14" fill="#64748b" text-anchor="middle">
+    Détermination graphique de l'ensemble de définition : Df = [-4, 1[ ∪ ]1, 5]
+  </text>
+
+  <!-- Grid lines -->
+  <g stroke="#e2e8f0" stroke-width="1" stroke-dasharray="3,3">
+    <!-- Verticals -->
+    <line x1="120" y1="90" x2="120" y2="330"/>
+    <line x1="180" y1="90" x2="180" y2="330"/>
+    <line x1="240" y1="90" x2="240" y2="330"/>
+    <line x1="300" y1="90" x2="300" y2="330"/>
+    <line x1="360" y1="90" x2="360" y2="330"/>
+    <line x1="420" y1="90" x2="420" y2="330"/>
+    <line x1="480" y1="90" x2="480" y2="330"/>
+    <line x1="540" y1="90" x2="540" y2="330"/>
+    <line x1="600" y1="90" x2="600" y2="330"/>
+    <line x1="660" y1="90" x2="660" y2="330"/>
+    <!-- Horizontals -->
+    <line x1="80" y1="130" x2="720" y2="130"/>
+    <line x1="80" y1="180" x2="720" y2="180"/>
+    <line x1="80" y1="230" x2="720" y2="230"/>
+    <line x1="80" y1="280" x2="720" y2="280"/>
+  </g>
+
+  <!-- Axes (Origin at x=360, y=230) -->
+  <!-- X axis -->
+  <line x1="70" y1="230" x2="730" y2="230" stroke="#334155" stroke-width="2" marker-end="url(#arrow)"/>
+  <text x="735" y="235" font-family="sans-serif" font-size="15" font-weight="bold" fill="#334155">x</text>
+  <text x="350" y="248" font-family="sans-serif" font-size="14" fill="#334155">0</text>
+
+  <!-- Y axis -->
+  <line x1="360" y1="340" x2="360" y2="85" stroke="#334155" stroke-width="2" marker-end="url(#arrow)"/>
+  <text x="365" y="80" font-family="sans-serif" font-size="15" font-weight="bold" fill="#334155">y</text>
+
+  <!-- Ticks X: 1 unit = 60 px. -4=120, -3=180, -2=240, -1=300, 0=360, 1=420, 2=480, 3=540, 4=600, 5=660 -->
+  <text x="120" y="248" font-family="sans-serif" font-size="13" fill="#64748b" text-anchor="middle">-4</text>
+  <text x="240" y="248" font-family="sans-serif" font-size="13" fill="#64748b" text-anchor="middle">-2</text>
+  <text x="420" y="248" font-family="sans-serif" font-size="13" font-weight="bold" fill="#dc2626" text-anchor="middle">1</text>
+  <text x="540" y="248" font-family="sans-serif" font-size="13" fill="#64748b" text-anchor="middle">3</text>
+  <text x="660" y="248" font-family="sans-serif" font-size="13" fill="#64748b" text-anchor="middle">5</text>
+
+  <!-- Vertical Asymptote at x = 1 (420) -->
+  <line x1="420" y1="90" x2="420" y2="330" stroke="#dc2626" stroke-width="2" stroke-dasharray="6,4"/>
+  <text x="428" y="115" font-family="sans-serif" font-size="12" font-weight="bold" fill="#dc2626">قيمة ممنوعة x = 1</text>
+
+  <!-- Projection lines from curve down to x-axis -->
+  <!-- Left branch projections -->
+  <line x1="120" y1="280" x2="120" y2="365" stroke="#059669" stroke-width="1.5" stroke-dasharray="4,4"/>
+  <line x1="410" y1="100" x2="410" y2="365" stroke="#dc2626" stroke-width="1.5" stroke-dasharray="4,4"/>
+  <!-- Right branch projections -->
+  <line x1="430" y1="330" x2="430" y2="365" stroke="#dc2626" stroke-width="1.5" stroke-dasharray="4,4"/>
+  <line x1="660" y1="150" x2="660" y2="365" stroke="#059669" stroke-width="1.5" stroke-dasharray="4,4"/>
+
+  <!-- Curve (Cf) -->
+  <!-- Branch 1: from (-4, -1) to (0.85, 3.5) -> (120, 280) to (411, 95) -->
+  <path d="M 120 280 Q 200 240 300 210 T 410 95" fill="none" stroke="#2563eb" stroke-width="3.5" stroke-linecap="round"/>
+  <!-- Branch 2: from (1.15, -2.5) to (5, 1.6) -> (429, 330) to (660, 150) -->
+  <path d="M 430 330 Q 480 200 550 170 T 660 150" fill="none" stroke="#2563eb" stroke-width="3.5" stroke-linecap="round"/>
+
+  <!-- Points at boundaries -->
+  <circle cx="120" cy="280" r="5" fill="#059669" stroke="#ffffff" stroke-width="1.5"/>
+  <circle cx="660" cy="150" r="5" fill="#059669" stroke="#ffffff" stroke-width="1.5"/>
+  <text x="140" y="300" font-family="sans-serif" font-size="13" font-weight="bold" fill="#2563eb">(Cf)</text>
+
+  <!-- Real Axis Domain Representation below -->
+  <rect x="80" y="360" width="640" height="42" fill="#ffffff" rx="6" stroke="#cbd5e1"/>
+  <line x1="90" y1="381" x2="710" y2="381" stroke="#94a3b8" stroke-width="3"/>
+  
+  <!-- Highlighted intervals on the axis -->
+  <!-- [-4, 1[ -->
+  <line x1="120" y1="381" x2="415" y2="381" stroke="#059669" stroke-width="7" stroke-linecap="round"/>
+  <!-- ]1, 5] -->
+  <line x1="425" y1="381" x2="660" y2="381" stroke="#059669" stroke-width="7" stroke-linecap="round"/>
+
+  <!-- Interval brackets -->
+  <!-- [-4 -->
+  <path d="M 125 372 L 120 372 L 120 390 L 125 390" fill="none" stroke="#059669" stroke-width="3"/>
+  <text x="120" y="415" font-family="sans-serif" font-size="13" font-weight="bold" fill="#059669" text-anchor="middle">[-4</text>
+  
+  <!-- 1[ (excluded left) -->
+  <path d="M 412 372 L 417 372 L 417 390 L 412 390" fill="none" stroke="#dc2626" stroke-width="3"/>
+  <!-- ]1 (excluded right) -->
+  <path d="M 428 372 L 423 372 L 423 390 L 428 390" fill="none" stroke="#dc2626" stroke-width="3"/>
+  <circle cx="420" cy="381" r="5" fill="#ffffff" stroke="#dc2626" stroke-width="2.5"/>
+  <text x="420" y="415" font-family="sans-serif" font-size="13" font-weight="bold" fill="#dc2626" text-anchor="middle">1 (مرفوض)</text>
+
+  <!-- 5] -->
+  <path d="M 655 372 L 660 372 L 660 390 L 655 390" fill="none" stroke="#059669" stroke-width="3"/>
+  <text x="660" y="415" font-family="sans-serif" font-size="13" font-weight="bold" fill="#059669" text-anchor="middle">5]</text>
+
+  <!-- Legend Badge -->
+  <rect x="530" y="85" width="230" height="42" fill="#eff6ff" rx="6" stroke="#bfdbfe"/>
+  <text x="645" y="112" font-family="sans-serif" font-size="13" font-weight="bold" fill="#1e40af" text-anchor="middle">Df = [-4 , 1[ ∪ ]1 , 5]</text>
+</svg>

@@ -1,0 +1,81 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 850 450" width="100%" height="auto">
+  <defs>
+    <marker id="arr-ray" viewBox="0 0 10 10" refX="6" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M 0 1 L 10 5 L 0 9 z" fill="#dc2626"/>
+    </marker>
+    <marker id="arr-ray2" viewBox="0 0 10 10" refX="6" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M 0 1 L 10 5 L 0 9 z" fill="#059669"/>
+    </marker>
+    <marker id="arr-ray3" viewBox="0 0 10 10" refX="6" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M 0 1 L 10 5 L 0 9 z" fill="#2563eb"/>
+    </marker>
+    <marker id="arrow-lens" viewBox="0 0 10 10" refX="5" refY="5" markerWidth="6" markerHeight="6" orient="auto">
+      <path d="M 1 8 L 5 1 L 9 8 z" fill="#2563eb"/>
+    </marker>
+  </defs>
+  <rect width="100%" height="100%" fill="#ffffff" rx="12"/>
+  <rect x="15" y="15" width="820" height="420" fill="#f8fafc" rx="8" stroke="#e2e8f0"/>
+
+  <text x="425" y="45" font-family="sans-serif" font-size="20" font-weight="bold" fill="#0f172a" text-anchor="middle">
+    الإنشاء الهندسي للصورة في عدسة مقربة (Lentille Mince Convergente)
+  </text>
+  <text x="425" y="70" font-family="sans-serif" font-size="14" fill="#64748b" text-anchor="middle">
+    مسارات الأشعة الخاصة الثلاثة وقانون التوافق لغوص : 1/OA' - 1/OA = 1/OF'
+  </text>
+
+  <!-- Principal Optical Axis Δ (Center y = 230) -->
+  <line x1="50" y1="230" x2="800" y2="230" stroke="#334155" stroke-width="2"/>
+  <text x="805" y="235" font-family="sans-serif" font-size="15" font-weight="bold" fill="#334155">Δ</text>
+
+  <!-- Converging Lens (at x = 400, vertical line with outwards arrows) -->
+  <line x1="400" y1="380" x2="400" y2="80" stroke="#2563eb" stroke-width="2.5"/>
+  <!-- Arrows at ends -->
+  <polygon points="400,75 394,90 406,90" fill="#2563eb"/>
+  <polygon points="400,385 394,370 406,370" fill="#2563eb"/>
+  <text x="410" y="95" font-family="sans-serif" font-size="15" font-weight="bold" fill="#2563eb">(L)</text>
+
+  <!-- Optical Center O -->
+  <circle cx="400" cy="230" r="4" fill="#0f172a"/>
+  <text x="408" y="248" font-family="sans-serif" font-size="15" font-weight="bold" fill="#0f172a">O</text>
+
+  <!-- Focal points: f' = 120 px. F at x = 280, F' at x = 520 -->
+  <circle cx="280" cy="230" r="4" fill="#dc2626"/>
+  <text x="280" y="252" font-family="sans-serif" font-size="14" font-weight="bold" fill="#dc2626" text-anchor="middle">F (بؤرة شيء)</text>
+
+  <circle cx="520" cy="230" r="4" fill="#dc2626"/>
+  <text x="520" y="252" font-family="sans-serif" font-size="14" font-weight="bold" fill="#dc2626" text-anchor="middle">F' (بؤرة صورة)</text>
+
+  <!-- Object AB: placed at x = 160 (OA = -240 px, double focal distance 2f' -> A' is at 2f' = 640 px) -->
+  <!-- Height AB = 80 px (from y=230 to y=150) -->
+  <line x1="160" y1="230" x2="160" y2="150" stroke="#0f172a" stroke-width="3"/>
+  <polygon points="160,143 154,155 166,155" fill="#0f172a"/>
+  <text x="145" y="250" font-family="sans-serif" font-size="14" font-weight="bold" fill="#0f172a">A</text>
+  <text x="145" y="145" font-family="sans-serif" font-size="14" font-weight="bold" fill="#0f172a">B</text>
+
+  <!-- Image A'B': real, inverted, at x = 640, height = -80 px (from y=230 to y=310) -->
+  <line x1="640" y1="230" x2="640" y2="310" stroke="#7c3aed" stroke-width="3"/>
+  <polygon points="640,317 634,305 646,305" fill="#7c3aed"/>
+  <text x="650" y="248" font-family="sans-serif" font-size="14" font-weight="bold" fill="#7c3aed">A'</text>
+  <text x="650" y="325" font-family="sans-serif" font-size="14" font-weight="bold" fill="#7c3aed">B'</text>
+
+  <!-- RAY 1 (Red): Parallel to Δ, refracts through F' -->
+  <line x1="160" y1="150" x2="400" y2="150" stroke="#dc2626" stroke-width="2"/>
+  <line x1="280" y1="150" x2="285" y2="150" stroke="#dc2626" stroke-width="2" marker-end="url(#arr-ray)"/>
+  <line x1="400" y1="150" x2="720" y2="363" stroke="#dc2626" stroke-width="2"/>
+  <line x1="560" y1="257" x2="565" y2="260" stroke="#dc2626" stroke-width="2" marker-end="url(#arr-ray)"/>
+
+  <!-- RAY 2 (Blue): Through optical center O, continues undeviated -->
+  <line x1="160" y1="150" x2="720" y2="337" stroke="#2563eb" stroke-width="2"/>
+  <line x1="260" y1="183" x2="265" y2="185" stroke="#2563eb" stroke-width="2" marker-end="url(#arr-ray3)"/>
+  <line x1="500" y1="263" x2="505" y2="265" stroke="#2563eb" stroke-width="2" marker-end="url(#arr-ray3)"/>
+
+  <!-- RAY 3 (Green): Through F, refracts parallel to Δ -->
+  <line x1="160" y1="150" x2="400" y2="310" stroke="#059669" stroke-width="2"/>
+  <line x1="220" y1="190" x2="225" y2="193" stroke="#059669" stroke-width="2" marker-end="url(#arr-ray2)"/>
+  <line x1="400" y1="310" x2="720" y2="310" stroke="#059669" stroke-width="2"/>
+  <line x1="520" y1="310" x2="525" y2="310" stroke="#059669" stroke-width="2" marker-end="url(#arr-ray2)"/>
+
+  <!-- Formula Card -->
+  <rect x="50" y="85" width="230" height="45" fill="#f5f3ff" rx="6" stroke="#c4b5fd"/>
+  <text x="165" y="112" font-family="sans-serif" font-size="13" font-weight="bold" fill="#6d28d9" text-anchor="middle">التكبير : γ = A'B' / AB = OA' / OA</text>
+</svg>

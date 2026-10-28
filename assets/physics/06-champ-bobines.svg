@@ -1,0 +1,67 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 480" width="100%" height="auto">
+  <defs>
+    <marker id="arr-mag" viewBox="0 0 10 10" refX="6" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M 0 1 L 10 5 L 0 9 z" fill="#dc2626"/>
+    </marker>
+  </defs>
+  <rect width="100%" height="100%" fill="#ffffff" rx="12"/>
+  <rect x="15" y="15" width="770" height="450" fill="#f8fafc" rx="8" stroke="#e2e8f0"/>
+  <text x="400" y="45" font-family="sans-serif" font-size="20" font-weight="bold" fill="#0f172a" text-anchor="middle">
+    طيف الحقل المغناطيسي لقضيب وشيعة حلزونية (Champ Magnétique)
+  </text>
+  <text x="400" y="70" font-family="sans-serif" font-size="14" fill="#64748b" text-anchor="middle">
+    خطوط الحقل تخرج من القطب الشمالي (N) وتدخل في القطب الجنوبي (S) وقاعدة اليد اليمنى
+  </text>
+
+  <!-- Left: Bar Magnet (Aimant droit) -->
+  <g transform="translate(60, 100)">
+    <text x="140" y="25" font-family="sans-serif" font-size="15" font-weight="bold" fill="#0f172a" text-anchor="middle">1. قضيب مغناطيسي</text>
+    <!-- Magnet Body: 140 wide, 40 tall -->
+    <rect x="70" y="130" width="70" height="40" fill="#dc2626" rx="3"/>
+    <text x="105" y="155" font-family="sans-serif" font-size="16" font-weight="bold" fill="#ffffff" text-anchor="middle">N</text>
+    <rect x="140" y="130" width="70" height="40" fill="#2563eb" rx="3"/>
+    <text x="175" y="155" font-family="sans-serif" font-size="16" font-weight="bold" fill="#ffffff" text-anchor="middle">S</text>
+
+    <!-- Field lines (elliptical curves) -->
+    <!-- Top loop 1 -->
+    <path d="M 105 130 C 105 60, 175 60, 175 130" fill="none" stroke="#dc2626" stroke-width="2"/>
+    <path d="M 138 75 L 142 75" stroke="#dc2626" stroke-width="2" marker-end="url(#arr-mag)"/>
+    <!-- Top loop 2 -->
+    <path d="M 85 130 C 85 20, 195 20, 195 130" fill="none" stroke="#dc2626" stroke-width="1.8"/>
+    <!-- Bottom loop 1 -->
+    <path d="M 105 170 C 105 240, 175 240, 175 170" fill="none" stroke="#dc2626" stroke-width="2"/>
+    <!-- Bottom loop 2 -->
+    <path d="M 85 170 C 85 280, 195 280, 195 170" fill="none" stroke="#dc2626" stroke-width="1.8"/>
+  </g>
+
+  <!-- Right: Solenoid (Solénoïde) -->
+  <g transform="translate(430, 100)">
+    <text x="170" y="25" font-family="sans-serif" font-size="15" font-weight="bold" fill="#0f172a" text-anchor="middle">2. وشيعة حلزونية طويلة</text>
+    <!-- Solenoid Coils: horizontal cylinder -->
+    <rect x="40" y="125" width="260" height="50" fill="#f1f5f9" stroke="#94a3b8" stroke-width="1" rx="8"/>
+    <!-- Copper loops -->
+    <g stroke="#b45309" stroke-width="3" fill="none">
+      <ellipse cx="70" cy="150" rx="12" ry="25"/>
+      <ellipse cx="110" cy="150" rx="12" ry="25"/>
+      <ellipse cx="150" cy="150" rx="12" ry="25"/>
+      <ellipse cx="190" cy="150" rx="12" ry="25"/>
+      <ellipse cx="230" cy="150" rx="12" ry="25"/>
+      <ellipse cx="270" cy="150" rx="12" ry="25"/>
+    </g>
+
+    <!-- Field lines inside (Uniform: straight lines) -->
+    <line x1="20" y1="150" x2="320" y2="150" stroke="#dc2626" stroke-width="2.5" marker-end="url(#arr-mag)"/>
+    <line x1="30" y1="138" x2="310" y2="138" stroke="#dc2626" stroke-width="2"/>
+    <line x1="30" y1="162" x2="310" y2="162" stroke="#dc2626" stroke-width="2"/>
+
+    <text x="20" y="140" font-family="sans-serif" font-size="14" font-weight="bold" fill="#2563eb">وجه جنوبي S</text>
+    <text x="250" y="140" font-family="sans-serif" font-size="14" font-weight="bold" fill="#dc2626">وجه شمالي N</text>
+    <text x="170" y="195" font-family="sans-serif" font-size="12" font-weight="bold" fill="#dc2626" text-anchor="middle">حقل منتظم في المركز : B = μ₀ · (N/L) · I</text>
+  </g>
+
+  <!-- Summary info bottom -->
+  <rect x="80" y="380" width="640" height="50" fill="#ffffff" rx="6" stroke="#cbd5e1"/>
+  <text x="400" y="410" font-family="sans-serif" font-size="13" font-weight="bold" fill="#0f172a" text-anchor="middle">
+    قاعدة اليد اليمنى : الإبهام يشير لجهة التيار (أو القطب الشمالي) وبقية الأصابع تلتف مع جهة خطوط الحقل المغناطيسي
+  </text>
+</svg>

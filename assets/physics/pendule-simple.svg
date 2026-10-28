@@ -1,0 +1,83 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 480" width="100%" height="auto">
+  <defs>
+    <marker id="arr-pnd" viewBox="0 0 10 10" refX="6" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M 0 1 L 10 5 L 0 9 z" fill="#dc2626"/>
+    </marker>
+    <marker id="arr-pnd2" viewBox="0 0 10 10" refX="6" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M 0 1 L 10 5 L 0 9 z" fill="#2563eb"/>
+    </marker>
+  </defs>
+  <rect width="100%" height="100%" fill="#ffffff" rx="12"/>
+  <rect x="15" y="15" width="770" height="450" fill="#f8fafc" rx="8" stroke="#cbd5e1" stroke-width="1.5"/>
+
+  <text x="400" y="45" font-family="sans-serif" font-size="20" font-weight="bold" fill="#0f172a" text-anchor="middle">
+    النواس البسيط وتحولات الطاقة وحفظ الطاقة الميكانيكية (Pendule Simple)
+  </text>
+  <text x="400" y="70" font-family="sans-serif" font-size="13" fill="#64748b" text-anchor="middle">
+    التبادل الدوري بين الطاقة الكامنة الثقالية Epp والطاقة الحركية Ec: Em = Ec + Epp = cte
+  </text>
+
+  <!-- Ceiling (Suspension point O at 300, 110) -->
+  <line x1="180" y1="110" x2="420" y2="110" stroke="#334155" stroke-width="4"/>
+  <circle cx="300" cy="110" r="5" fill="#0f172a"/>
+  <text x="290" y="102" font-family="sans-serif" font-size="14" font-weight="bold" fill="#0f172a">O</text>
+
+  <!-- Equilibrium vertical reference line (length L = 220) -->
+  <line x1="300" y1="110" x2="300" y2="350" stroke="#94a3b8" stroke-width="1.5" stroke-dasharray="4,4"/>
+
+  <!-- Position 1: Equilibrium B (300, 330) -->
+  <circle cx="300" cy="330" r="14" fill="#dbeafe" stroke="#2563eb" stroke-width="2"/>
+  <text x="300" y="335" font-family="sans-serif" font-size="11" font-weight="bold" fill="#1e40af" text-anchor="middle">B</text>
+  <!-- Velocity at B: horizontal vector v_max -->
+  <line x1="300" y1="330" x2="380" y2="330" stroke="#059669" stroke-width="2.5" marker-end="url(#arr-pnd2)"/>
+  <text x="370" y="320" font-family="sans-serif" font-size="12" font-weight="bold" fill="#059669">v_max</text>
+
+  <!-- Position 2: Extreme position A (angle θ_0 = 35 deg) -->
+  <!-- dx = 220 * sin(35°) = 126, dy = 220 * cos(35°) = 180 -> A at (426, 290) -->
+  <!-- String OA -->
+  <line x1="300" y1="110" x2="426" y2="290" stroke="#475569" stroke-width="2.5"/>
+  <circle cx="426" cy="290" r="14" fill="#fee2e2" stroke="#dc2626" stroke-width="2"/>
+  <text x="426" y="295" font-family="sans-serif" font-size="11" font-weight="bold" fill="#dc2626" text-anchor="middle">A</text>
+
+  <!-- Angle arc θ_0 at O -->
+  <path d="M 300 160 A 50 50 0 0 1 328 152" fill="none" stroke="#d97706" stroke-width="2"/>
+  <text x="325" y="175" font-family="sans-serif" font-size="13" font-weight="bold" fill="#d97706">θ₀</text>
+
+  <!-- Height difference h = L(1 - cos θ) -->
+  <line x1="300" y1="330" x2="460" y2="330" stroke="#64748b" stroke-width="1" stroke-dasharray="3,3"/>
+  <line x1="426" y1="290" x2="460" y2="290" stroke="#64748b" stroke-width="1" stroke-dasharray="3,3"/>
+  <line x1="450" y1="290" x2="450" y2="330" stroke="#dc2626" stroke-width="2"/>
+  <text x="465" y="315" font-family="sans-serif" font-size="13" font-weight="bold" fill="#dc2626">h</text>
+
+  <!-- Forces acting on mass at A -->
+  <!-- Tension T along string towards O -->
+  <line x1="426" y1="290" x2="385" y2="231" stroke="#2563eb" stroke-width="2.5" marker-end="url(#arr-pnd2)"/>
+  <text x="375" y="235" font-family="sans-serif" font-size="13" font-weight="bold" fill="#2563eb">T</text>
+  <!-- Gravity P downwards -->
+  <line x1="426" y1="290" x2="426" y2="370" stroke="#dc2626" stroke-width="2.5" marker-end="url(#arr-pnd)"/>
+  <text x="435" y="365" font-family="sans-serif" font-size="13" font-weight="bold" fill="#dc2626">P = mg</text>
+
+  <!-- Right Side: Energy States Panel -->
+  <g transform="translate(510, 100)">
+    <rect width="250" height="260" fill="#ffffff" rx="8" stroke="#cbd5e1"/>
+    <text x="125" y="28" font-family="sans-serif" font-size="14" font-weight="bold" fill="#0f172a" text-anchor="middle">الحصيلة الطاقوية عند النقطتين :</text>
+    
+    <!-- At A -->
+    <text x="20" y="65" font-family="sans-serif" font-size="13" font-weight="bold" fill="#dc2626">• عند الموضع الأقصى A :</text>
+    <text x="35" y="90" font-family="sans-serif" font-size="12" fill="#334155">السرعة معدومة: v_A = 0 ⟹ Ec(A) = 0</text>
+    <text x="35" y="112" font-family="sans-serif" font-size="12" fill="#334155">Epp(A) = m·g·h = m·g·L(1 - cos θ₀)</text>
+    <text x="35" y="132" font-family="sans-serif" font-size="12" font-weight="bold" fill="#dc2626">Em = Epp(A) (طاقة كامنة عظمى)</text>
+
+    <!-- At B -->
+    <text x="20" y="170" font-family="sans-serif" font-size="13" font-weight="bold" fill="#059669">• عند موضع التوازن B :</text>
+    <text x="35" y="195" font-family="sans-serif" font-size="12" fill="#334155">الارتفاع مرجعي: h = 0 ⟹ Epp(B) = 0</text>
+    <text x="35" y="215" font-family="sans-serif" font-size="12" fill="#334155">Ec(B) = ½ m v_B² (طاقة حركية عظمى)</text>
+    <text x="35" y="240" font-family="sans-serif" font-size="13" font-weight="bold" fill="#059669">v_B = √[2·g·L·(1 - cos θ₀)]</text>
+  </g>
+
+  <!-- Bottom Formula Banner -->
+  <rect x="40" y="395" width="720" height="45" fill="#f0fdf4" rx="6" stroke="#86efac"/>
+  <text x="400" y="423" font-family="sans-serif" font-size="13" font-weight="bold" fill="#166534" text-anchor="middle">
+    مبرهنة انحفاظ الطاقة الميكانيكية (إهمال الاحتكاك): Em(A) = Em(B) ⟹ ½ m v_B² = m g L (1 - cos θ₀)
+  </text>
+</svg>

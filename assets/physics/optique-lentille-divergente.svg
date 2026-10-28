@@ -1,0 +1,66 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 850 450" width="100%" height="auto">
+  <defs>
+    <marker id="arr-div" viewBox="0 0 10 10" refX="6" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M 0 1 L 10 5 L 0 9 z" fill="#dc2626"/>
+    </marker>
+    <marker id="arr-div2" viewBox="0 0 10 10" refX="6" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M 0 1 L 10 5 L 0 9 z" fill="#2563eb"/>
+    </marker>
+  </defs>
+  <rect width="100%" height="100%" fill="#ffffff" rx="12"/>
+  <rect x="15" y="15" width="820" height="420" fill="#f8fafc" rx="8" stroke="#cbd5e1" stroke-width="1.5"/>
+
+  <text x="425" y="45" font-family="sans-serif" font-size="20" font-weight="bold" fill="#0f172a" text-anchor="middle">
+    الإنشاء الهندسي للصورة في عدسة مفرقة (Lentille Divergente)
+  </text>
+  <text x="425" y="70" font-family="sans-serif" font-size="13" fill="#64748b" text-anchor="middle">
+    الصورة خيالية (Virtuelle)، معتدلة (Droite)، ومصغرة دوماً (|γ| &lt; 1) وقانون غوص
+  </text>
+
+  <!-- Principal Axis (y = 230) -->
+  <line x1="50" y1="230" x2="800" y2="230" stroke="#334155" stroke-width="2"/>
+  <text x="805" y="235" font-family="sans-serif" font-size="14" font-weight="bold" fill="#334155">Δ</text>
+
+  <!-- Diverging Lens (x = 440) - arrows pointing inwards at edges -->
+  <line x1="440" y1="370" x2="440" y2="90" stroke="#2563eb" stroke-width="2.5"/>
+  <polygon points="440,90 434,105 446,105" fill="none" stroke="#2563eb" stroke-width="2"/>
+  <polygon points="440,370 434,355 446,355" fill="none" stroke="#2563eb" stroke-width="2"/>
+  <text x="450" y="105" font-family="sans-serif" font-size="14" font-weight="bold" fill="#2563eb">(L)</text>
+  <circle cx="440" cy="230" r="4" fill="#0f172a"/>
+  <text x="445" y="248" font-family="sans-serif" font-size="14" font-weight="bold" fill="#0f172a">O</text>
+
+  <!-- Foci: for diverging lens, F' is on left (object side), F is on right (image side) -->
+  <!-- f' = -120 px. F' at x = 320, F at x = 560 -->
+  <circle cx="320" cy="230" r="4" fill="#dc2626"/>
+  <text x="320" y="252" font-family="sans-serif" font-size="13" font-weight="bold" fill="#dc2626" text-anchor="middle">F' (بؤرة صورة خيالية)</text>
+
+  <circle cx="560" cy="230" r="4" fill="#dc2626"/>
+  <text x="560" y="252" font-family="sans-serif" font-size="13" font-weight="bold" fill="#dc2626" text-anchor="middle">F (بؤرة شيء)</text>
+
+  <!-- Real Object AB at x = 200 (OA = -240 px), height AB = 80 px (y=230 to 150) -->
+  <line x1="200" y1="230" x2="200" y2="150" stroke="#0f172a" stroke-width="3"/>
+  <polygon points="200,143 194,155 206,155" fill="#0f172a"/>
+  <text x="185" y="248" font-family="sans-serif" font-size="14" font-weight="bold" fill="#0f172a">A</text>
+  <text x="185" y="145" font-family="sans-serif" font-size="14" font-weight="bold" fill="#0f172a">B</text>
+
+  <!-- Ray 1: Parallel to Δ, diverges such that extension passes through F' -->
+  <line x1="200" y1="150" x2="440" y2="150" stroke="#dc2626" stroke-width="2"/>
+  <line x1="440" y1="150" x2="720" y2="57" stroke="#dc2626" stroke-width="2"/>
+  <!-- Dotted extension back to F'(320, 230) -->
+  <line x1="440" y1="150" x2="320" y2="230" stroke="#dc2626" stroke-width="1.8" stroke-dasharray="4,4"/>
+
+  <!-- Ray 2: Through optical center O, continues undeviated -->
+  <line x1="200" y1="150" x2="720" y2="323" stroke="#2563eb" stroke-width="2"/>
+
+  <!-- Image A'B' at intersection of Ray 2 and extension of Ray 1 -->
+  <!-- Intersection: x = 360, height = 26.7 px (from y=230 to y=203) -->
+  <line x1="360" y1="230" x2="360" y2="203" stroke="#7c3aed" stroke-width="2.5" stroke-dasharray="3,2"/>
+  <polygon points="360,198 355,207 365,207" fill="#7c3aed"/>
+  <text x="365" y="225" font-family="sans-serif" font-size="12" font-weight="bold" fill="#7c3aed">A'</text>
+  <text x="365" y="195" font-family="sans-serif" font-size="12" font-weight="bold" fill="#7c3aed">B'</text>
+
+  <!-- Properties Card -->
+  <rect x="50" y="85" width="230" height="50" fill="#f5f3ff" rx="6" stroke="#c4b5fd"/>
+  <text x="165" y="108" font-family="sans-serif" font-size="12" font-weight="bold" fill="#6d28d9" text-anchor="middle">الصورة خيالية A'B' تقع قبل العدسة</text>
+  <text x="165" y="125" font-family="sans-serif" font-size="11" fill="#6d28d9" text-anchor="middle">0 &lt; γ &lt; 1 (معتدلة ومصغرة)</text>
+</svg>

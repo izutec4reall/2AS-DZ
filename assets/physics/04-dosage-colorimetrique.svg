@@ -1,0 +1,89 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 480" width="100%" height="auto">
+  <defs>
+    <linearGradient id="grad-liquid" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#93c5fd" stop-opacity="0.8"/>
+      <stop offset="100%" stop-color="#3b82f6" stop-opacity="0.9"/>
+    </linearGradient>
+    <linearGradient id="grad-titrant" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#fbcfe8" stop-opacity="0.9"/>
+      <stop offset="100%" stop-color="#db2777" stop-opacity="0.9"/>
+    </linearGradient>
+  </defs>
+  <rect width="100%" height="100%" fill="#ffffff" rx="12"/>
+  <rect x="15" y="15" width="770" height="450" fill="#f8fafc" rx="8" stroke="#e2e8f0"/>
+
+  <text x="400" y="42" font-family="sans-serif" font-size="20" font-weight="bold" fill="#0f172a" text-anchor="middle">
+    التركيب التجريبي للمعايرة اللونية (Dosage Colorimétrique)
+  </text>
+  <text x="400" y="66" font-family="sans-serif" font-size="13" fill="#64748b" text-anchor="middle">
+    تحديد نقطة التكافؤ Équivalence : C₁·V₁ = C₂·V_E
+  </text>
+
+  <!-- Retort Stand (Support universel) -->
+  <rect x="180" y="410" width="160" height="15" fill="#475569" rx="3"/>
+  <rect x="210" y="90" width="12" height="320" fill="#64748b"/>
+  <!-- Clamp arms -->
+  <rect x="222" y="160" width="50" height="8" fill="#475569"/>
+  <rect x="222" y="290" width="50" height="8" fill="#475569"/>
+
+  <!-- Burette graduée -->
+  <rect x="268" y="100" width="16" height="190" fill="#f1f5f9" stroke="#334155" stroke-width="1.5"/>
+  <!-- Liquid in burette (KMnO4 - pink/purple) -->
+  <rect x="270" y="130" width="12" height="160" fill="url(#grad-titrant)"/>
+  <!-- Burette tip and tap -->
+  <polygon points="271,290 281,290 278,310 274,310" fill="#f1f5f9" stroke="#334155" stroke-width="1"/>
+  <rect x="262" y="295" width="28" height="6" fill="#0284c7" rx="2"/>
+  <!-- Drops falling -->
+  <circle cx="276" cy="322" r="2.5" fill="#db2777"/>
+  <circle cx="276" cy="333" r="2.5" fill="#db2777"/>
+
+  <!-- Beaker (Bécher) -->
+  <rect x="240" y="340" width="72" height="70" fill="none" stroke="#334155" stroke-width="2" rx="4"/>
+  <!-- Analyte Liquid in beaker (Fe2+ / colorless or pale green turning purple at equivalence) -->
+  <rect x="242" y="365" width="68" height="43" fill="url(#grad-liquid)" rx="2"/>
+  <!-- Magnetic stirrer bar (Barreau aimanté) -->
+  <rect x="264" y="400" width="24" height="6" fill="#ffffff" stroke="#334155" stroke-width="1" rx="3"/>
+
+  <!-- Magnetic Stirrer base (Agitateur magnétique) -->
+  <rect x="225" y="410" width="102" height="25" fill="#e2e8f0" stroke="#475569" stroke-width="1.5" rx="4"/>
+  <circle cx="250" cy="422" r="4" fill="#059669"/>
+  <circle cx="300" cy="422" r="5" fill="#94a3b8"/>
+
+  <!-- Labels on left/middle -->
+  <line x1="284" y1="140" x2="360" y2="140" stroke="#db2777" stroke-width="1.5"/>
+  <text x="365" y="144" font-family="sans-serif" font-size="13" font-weight="bold" fill="#db2777">سحاحة مدرجة (محلول معاير: C₁, V_E)</text>
+
+  <line x1="290" y1="298" x2="360" y2="298" stroke="#0284c7" stroke-width="1.5"/>
+  <text x="365" y="302" font-family="sans-serif" font-size="12" fill="#0284c7">صنبور التحكم بالتدفق</text>
+
+  <line x1="312" y1="375" x2="360" y2="375" stroke="#2563eb" stroke-width="1.5"/>
+  <text x="365" y="379" font-family="sans-serif" font-size="13" font-weight="bold" fill="#1e40af">بيشر (محلول معاير: C₂, V₂)</text>
+
+  <line x1="327" y1="422" x2="360" y2="422" stroke="#475569" stroke-width="1.5"/>
+  <text x="365" y="426" font-family="sans-serif" font-size="12" fill="#475569">مخلاط مغناطيسي مع قضيب تحريك</text>
+
+  <!-- Right Side: Titration Curve Panel -->
+  <g transform="translate(480, 90)">
+    <rect width="280" height="230" fill="#ffffff" rx="6" stroke="#cbd5e1"/>
+    <text x="140" y="25" font-family="sans-serif" font-size="13" font-weight="bold" fill="#0f172a" text-anchor="middle">منحنى المعايرة ونقطة التكافؤ E</text>
+    <!-- Axes -->
+    <line x1="40" y1="195" x2="260" y2="195" stroke="#334155" stroke-width="1.5"/>
+    <text x="265" y="200" font-family="sans-serif" font-size="11" fill="#334155">V (mL)</text>
+    <line x1="40" y1="195" x2="40" y2="35" stroke="#334155" stroke-width="1.5"/>
+    <text x="35" y="30" font-family="sans-serif" font-size="11" fill="#334155">pH / σ</text>
+    
+    <!-- Sigmoid Titration Curve -->
+    <path d="M 45 175 Q 110 170 135 140 T 165 60 T 250 50" fill="none" stroke="#db2777" stroke-width="2.5"/>
+    
+    <!-- Equivalence point E -->
+    <circle cx="150" cy="100" r="5" fill="#dc2626"/>
+    <text x="160" y="98" font-family="sans-serif" font-size="12" font-weight="bold" fill="#dc2626">E (V_E, pH_E)</text>
+    
+    <line x1="150" y1="100" x2="150" y2="195" stroke="#dc2626" stroke-width="1" stroke-dasharray="3,3"/>
+    <text x="150" y="212" font-family="sans-serif" font-size="11" font-weight="bold" fill="#dc2626" text-anchor="middle">V_E</text>
+
+    <!-- Law at equivalence -->
+    <rect x="20" y="240" width="240" height="45" fill="#fdf2f8" rx="5" stroke="#f472b6"/>
+    <text x="140" y="267" font-family="sans-serif" font-size="13" font-weight="bold" fill="#9d174d" text-anchor="middle">عند التكافؤ : n₁/a = n₂/b</text>
+  </g>
+</svg>

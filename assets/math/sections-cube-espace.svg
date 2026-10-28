@@ -1,0 +1,79 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 480" width="100%" height="auto">
+  <rect width="100%" height="100%" fill="#ffffff" rx="12"/>
+  <rect x="15" y="15" width="770" height="450" fill="#f8fafc" rx="8" stroke="#cbd5e1" stroke-width="1.5"/>
+
+  <text x="400" y="45" font-family="sans-serif" font-size="20" font-weight="bold" fill="#0f172a" text-anchor="middle">
+    المقاطع المستوية للمجسمات في الفضاء (Sections Planes d'un Cube)
+  </text>
+  <text x="400" y="70" font-family="sans-serif" font-size="13" fill="#64748b" text-anchor="middle">
+    مقطع مكعب بمستوٍ: إنشاء خطوط تقاطع المستوي القاطع مع الأوجه المتوازية (خطوط متوازية)
+  </text>
+
+  <!-- Isometric View of Cube ABCDEFGH -->
+  <!-- Center at (280, 260). Front face: A,B,C,D; Back face: E,F,G,H -->
+  <!-- Let: A(180, 320), B(320, 320), C(320, 180), D(180, 180) -->
+  <!-- Back shift: dx = +80, dy = -60 -->
+  <!-- E(260, 260), F(400, 260), G(400, 120), H(260, 120) -->
+
+  <g transform="translate(40, 20)">
+    <!-- Hidden edges (Dashed) -->
+    <line x1="180" y1="320" x2="260" y2="260" stroke="#94a3b8" stroke-width="1.5" stroke-dasharray="4,4"/>
+    <line x1="260" y1="260" x2="400" y2="260" stroke="#94a3b8" stroke-width="1.5" stroke-dasharray="4,4"/>
+    <line x1="260" y1="260" x2="260" y2="120" stroke="#94a3b8" stroke-width="1.5" stroke-dasharray="4,4"/>
+
+    <!-- Visible back edges -->
+    <line x1="400" y1="260" x2="400" y2="120" stroke="#334155" stroke-width="2"/>
+    <line x1="260" y1="120" x2="400" y2="120" stroke="#334155" stroke-width="2"/>
+    <line x1="180" y1="180" x2="260" y2="120" stroke="#334155" stroke-width="2"/>
+    <line x1="320" y1="180" x2="400" y2="120" stroke="#334155" stroke-width="2"/>
+    <line x1="320" y1="320" x2="400" y2="260" stroke="#334155" stroke-width="2"/>
+
+    <!-- Front Face ABCD -->
+    <polygon points="180,320 320,320 320,180 180,180" fill="none" stroke="#334155" stroke-width="2"/>
+
+    <!-- Vertices labels -->
+    <text x="165" y="335" font-family="sans-serif" font-size="12" font-weight="bold" fill="#0f172a">A</text>
+    <text x="330" y="335" font-family="sans-serif" font-size="12" font-weight="bold" fill="#0f172a">B</text>
+    <text x="330" y="175" font-family="sans-serif" font-size="12" font-weight="bold" fill="#0f172a">C</text>
+    <text x="165" y="175" font-family="sans-serif" font-size="12" font-weight="bold" fill="#0f172a">D</text>
+    <text x="245" y="115" font-family="sans-serif" font-size="12" font-weight="bold" fill="#0f172a">H</text>
+    <text x="410" y="115" font-family="sans-serif" font-size="12" font-weight="bold" fill="#0f172a">G</text>
+    <text x="410" y="265" font-family="sans-serif" font-size="12" font-weight="bold" fill="#0f172a">F</text>
+
+    <!-- Cutting Plane Section: Hexagonal Section P1-P2-P3-P4-P5-P6 -->
+    <!-- Midpoints: P1 on AB(250, 320), P2 on BF(360, 290), P3 on FG(400, 190), P4 on GH(330, 120), P5 on HD(220, 150), P6 on DA(180, 250) -->
+    <polygon points="250,320 360,290 400,190 330,120 220,150 180,250" fill="#fef08a" fill-opacity="0.75" stroke="#d97706" stroke-width="2.5"/>
+
+    <circle cx="250" cy="320" r="4" fill="#dc2626"/><text x="250" y="340" font-family="sans-serif" font-size="10" font-weight="bold" fill="#dc2626">I</text>
+    <circle cx="360" cy="290" r="4" fill="#dc2626"/><text x="375" y="295" font-family="sans-serif" font-size="10" font-weight="bold" fill="#dc2626">J</text>
+    <circle cx="400" cy="190" r="4" fill="#dc2626"/><text x="415" y="195" font-family="sans-serif" font-size="10" font-weight="bold" fill="#dc2626">K</text>
+    <circle cx="330" cy="120" r="4" fill="#dc2626"/><text x="330" y="105" font-family="sans-serif" font-size="10" font-weight="bold" fill="#dc2626">L</text>
+    <circle cx="220" cy="150" r="4" fill="#dc2626"/><text x="205" y="145" font-family="sans-serif" font-size="10" font-weight="bold" fill="#dc2626">M</text>
+    <circle cx="180" cy="250" r="4" fill="#dc2626"/><text x="165" y="255" font-family="sans-serif" font-size="10" font-weight="bold" fill="#dc2626">N</text>
+  </g>
+
+  <!-- Right: Properties Card -->
+  <g transform="translate(490, 100)">
+    <rect width="270" height="260" fill="#ffffff" rx="8" stroke="#cbd5e1"/>
+    <text x="135" y="30" font-family="sans-serif" font-size="14" font-weight="bold" fill="#0f172a" text-anchor="middle">قواعد إنشاء المقاطع المستوية :</text>
+    
+    <text x="15" y="65" font-family="sans-serif" font-size="12" font-weight="bold" fill="#1e40af">1. الوجهان المتقابلان متوازيان :</text>
+    <text x="25" y="85" font-family="sans-serif" font-size="11" fill="#334155">تقاطع المستوي القاطع مع وجهين متوازيين</text>
+    <text x="25" y="102" font-family="sans-serif" font-size="11" fill="#334155">يكون وفق **مستقيمين متوازيين**.</text>
+
+    <text x="15" y="130" font-family="sans-serif" font-size="12" font-weight="bold" fill="#059669">2. النقاط من نفس الوجه :</text>
+    <text x="25" y="150" font-family="sans-serif" font-size="11" fill="#334155">نوصل بين نقطتين مشتركتين تقعان</text>
+    <text x="25" y="167" font-family="sans-serif" font-size="11" fill="#334155">في نفس المستوي الوجهي مباشرة.</text>
+
+    <text x="15" y="195" font-family="sans-serif" font-size="12" font-weight="bold" fill="#dc2626">3. الأشكال الناتجة الممكنة للمقطع :</text>
+    <text x="25" y="215" font-family="sans-serif" font-size="11" fill="#334155">• مثلث (قطع 3 أحرف متلاقية)</text>
+    <text x="25" y="232" font-family="sans-serif" font-size="11" fill="#334155">• رباعي أضلاع (شبه منحرف، متوازي أضلاع)</text>
+    <text x="25" y="249" font-family="sans-serif" font-size="11" fill="#334155">• خماسي أو سداسي منتظم (مثل الشكل المقابل)</text>
+  </g>
+
+  <!-- Bottom Banner -->
+  <rect x="40" y="380" width="720" height="50" fill="#f0fdf4" rx="6" stroke="#86efac"/>
+  <text x="400" y="410" font-family="sans-serif" font-size="13" font-weight="bold" fill="#166534" text-anchor="middle">
+    مبرهنة التوازي: إذا قطع مستوٍ مستويين متوازيين فإن خطي التقاطع مستقيمان متوازيان تماماً.
+  </text>
+</svg>

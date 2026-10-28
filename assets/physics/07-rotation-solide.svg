@@ -1,0 +1,44 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 450" width="100%" height="auto">
+  <defs>
+    <marker id="arr-rot" viewBox="0 0 10 10" refX="6" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M 0 1 L 10 5 L 0 9 z" fill="#dc2626"/>
+    </marker>
+  </defs>
+  <rect width="100%" height="100%" fill="#ffffff" rx="12"/>
+  <rect x="15" y="15" width="770" height="420" fill="#f8fafc" rx="8" stroke="#e2e8f0"/>
+  <text x="400" y="45" font-family="sans-serif" font-size="20" font-weight="bold" fill="#0f172a" text-anchor="middle">
+    العمل والطاقة الحركية لحركة دورانية : Ec = ½ J_Δ · ω²
+  </text>
+  <text x="400" y="70" font-family="sans-serif" font-size="14" fill="#64748b" text-anchor="middle">
+    عزم قوة بالنسبة لمحور ثابت M_Δ(F) = ± F · d وعمل العزم W = M_Δ · Δθ
+  </text>
+
+  <!-- Disc / Pulley Center (260, 240), Radius R = 110 -->
+  <circle cx="260" cy="240" r="110" fill="#f1f5f9" stroke="#334155" stroke-width="3"/>
+  <circle cx="260" cy="240" r="15" fill="#94a3b8" stroke="#334155" stroke-width="2"/>
+  <circle cx="260" cy="240" r="4" fill="#dc2626"/>
+  <text x="245" y="245" font-family="sans-serif" font-size="14" font-weight="bold" fill="#dc2626">Δ</text>
+
+  <!-- Rotation direction arrow ω -->
+  <path d="M 230 150 A 90 90 0 0 1 310 160" fill="none" stroke="#2563eb" stroke-width="3" marker-end="url(#arr-rot)"/>
+  <text x="280" y="140" font-family="sans-serif" font-size="16" font-weight="bold" fill="#2563eb">ω</text>
+
+  <!-- Tangential Force F applied at rim (370, 240) pointing downwards -->
+  <line x1="370" y1="240" x2="370" y2="360" stroke="#dc2626" stroke-width="3" marker-end="url(#arr-rot)"/>
+  <text x="385" y="340" font-family="sans-serif" font-size="16" font-weight="bold" fill="#dc2626">F</text>
+
+  <!-- Lever arm d = R -->
+  <line x1="260" y1="240" x2="370" y2="240" stroke="#059669" stroke-width="2" stroke-dasharray="3,3"/>
+  <text x="315" y="230" font-family="sans-serif" font-size="14" font-weight="bold" fill="#059669" text-anchor="middle">d = R</text>
+
+  <!-- Right Side Formulas -->
+  <rect x="460" y="110" width="290" height="260" fill="#ffffff" rx="8" stroke="#cbd5e1"/>
+  <text x="605" y="140" font-family="sans-serif" font-size="15" font-weight="bold" fill="#0f172a" text-anchor="middle">القوانين الأساسية للدوران :</text>
+  
+  <text x="480" y="175" font-family="sans-serif" font-size="13" fill="#1e40af">• عزم القوة : M_Δ(F) = F · d</text>
+  <text x="480" y="210" font-family="sans-serif" font-size="13" fill="#1e40af">• عمل العزم : W = M_Δ · Δθ</text>
+  <text x="480" y="245" font-family="sans-serif" font-size="13" fill="#059669">• الطاقة الحركية : Ec = ½ J_Δ · ω²</text>
+  <text x="480" y="280" font-family="sans-serif" font-size="13" fill="#dc2626">• مبرهنة الطاقة الحركية :</text>
+  <text x="500" y="305" font-family="sans-serif" font-size="13" font-weight="bold" fill="#dc2626">ΔEc = ½ J_Δ (ω₂² - ω₁²) = Σ W</text>
+  <text x="480" y="340" font-family="sans-serif" font-size="12" fill="#64748b">• الاستطاعة : P = M_Δ · ω</text>
+</svg>

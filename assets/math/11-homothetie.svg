@@ -1,0 +1,48 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 450" width="100%" height="auto">
+  <rect width="100%" height="100%" fill="#ffffff" rx="12"/>
+  <rect x="15" y="15" width="770" height="420" fill="#f8fafc" rx="8" stroke="#e2e8f0"/>
+  <text x="400" y="45" font-family="sans-serif" font-size="20" font-weight="bold" fill="#0f172a" text-anchor="middle">
+    التحاكي في المستوي وخواصه الهندسية : h(Ω, k)
+  </text>
+  <text x="400" y="70" font-family="sans-serif" font-size="14" fill="#64748b" text-anchor="middle">
+    التعريف الشعاعي : ΩM' = k · ΩM وتأثير النسبة (تكبير k &gt; 1 أو تصغير 0 &lt; k &lt; 1)
+  </text>
+
+  <!-- Center Ω (120, 240) -->
+  <circle cx="120" cy="240" r="5" fill="#dc2626"/>
+  <text x="105" y="245" font-family="sans-serif" font-size="16" font-weight="bold" fill="#dc2626">Ω</text>
+
+  <!-- Original Triangle ABC: A(260, 190), B(320, 290), C(240, 290) -->
+  <polygon points="260,190 320,290 240,290" fill="#dbeafe" stroke="#2563eb" stroke-width="2"/>
+  <circle cx="260" cy="190" r="4" fill="#2563eb"/>
+  <text x="260" y="180" font-family="sans-serif" font-size="13" font-weight="bold" fill="#2563eb" text-anchor="middle">A</text>
+  <circle cx="320" cy="290" r="4" fill="#2563eb"/>
+  <text x="330" y="305" font-family="sans-serif" font-size="13" font-weight="bold" fill="#2563eb">B</text>
+  <circle cx="240" cy="290" r="4" fill="#2563eb"/>
+  <text x="230" y="305" font-family="sans-serif" font-size="13" font-weight="bold" fill="#2563eb">C</text>
+
+  <!-- Transformed Triangle A'B'C' by k = 2 -->
+  <!-- Vector ΩA is (140, -50) -> ΩA' is (280, -100) -> A'(400, 140) -->
+  <!-- Vector ΩB is (200, +50) -> ΩB' is (400, +100) -> B'(520, 340) -->
+  <!-- Vector ΩC is (120, +50) -> ΩC' is (240, +100) -> C'(360, 340) -->
+  <polygon points="400,140 520,340 360,340" fill="#fef3c7" stroke="#d97706" stroke-width="2.5"/>
+  <circle cx="400" cy="140" r="5" fill="#d97706"/>
+  <text x="400" y="125" font-family="sans-serif" font-size="14" font-weight="bold" fill="#d97706" text-anchor="middle">A'</text>
+  <circle cx="520" cy="340" r="5" fill="#d97706"/>
+  <text x="535" y="355" font-family="sans-serif" font-size="14" font-weight="bold" fill="#d97706">B'</text>
+  <circle cx="360" cy="340" r="5" fill="#d97706"/>
+  <text x="350" y="355" font-family="sans-serif" font-size="14" font-weight="bold" fill="#d97706">C'</text>
+
+  <!-- Alignment lines through Ω -->
+  <line x1="120" y1="240" x2="450" y2="120" stroke="#94a3b8" stroke-width="1.5" stroke-dasharray="4,4"/>
+  <line x1="120" y1="240" x2="570" y2="365" stroke="#94a3b8" stroke-width="1.5" stroke-dasharray="4,4"/>
+  <line x1="120" y1="240" x2="420" y2="365" stroke="#94a3b8" stroke-width="1.5" stroke-dasharray="4,4"/>
+
+  <!-- Info Card -->
+  <rect x="560" y="120" width="200" height="180" fill="#ffffff" rx="6" stroke="#cbd5e1"/>
+  <text x="660" y="145" font-family="sans-serif" font-size="13" font-weight="bold" fill="#0f172a" text-anchor="middle">خواص التحاكي :</text>
+  <text x="575" y="175" font-family="sans-serif" font-size="12" fill="#2563eb">• الأطوال تُضرب في |k|</text>
+  <text x="575" y="205" font-family="sans-serif" font-size="12" fill="#d97706">• المساحات تُضرب في k²</text>
+  <text x="575" y="235" font-family="sans-serif" font-size="12" fill="#059669">• يحفظ التوازي والزوايا</text>
+  <text x="575" y="265" font-family="sans-serif" font-size="12" fill="#7c3aed">• صورة دائرة هي دائرة</text>
+</svg>

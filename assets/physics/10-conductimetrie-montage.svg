@@ -1,0 +1,78 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 450" width="100%" height="auto">
+  <rect width="100%" height="100%" fill="#ffffff" rx="12"/>
+  <rect x="15" y="15" width="770" height="420" fill="#f8fafc" rx="8" stroke="#e2e8f0"/>
+  <text x="400" y="45" font-family="sans-serif" font-size="20" font-weight="bold" fill="#0f172a" text-anchor="middle">
+    قياس الناقلية والخلية وقانون كولروش : G = σ · (S / L)
+  </text>
+  <text x="400" y="70" font-family="sans-serif" font-size="14" fill="#64748b" text-anchor="middle">
+    العلاقة بين الناقلية النوعية والتركيز المولي : σ = Σ λᵢ · [Xᵢ] ومنحنى المعايرة
+  </text>
+
+  <!-- Left: Circuit Diagram with GBF, Cell, Ammeter, Voltmeter -->
+  <g transform="translate(60, 95)">
+    <rect width="360" height="260" fill="#ffffff" rx="6" stroke="#cbd5e1"/>
+    <text x="180" y="25" font-family="sans-serif" font-size="13" font-weight="bold" fill="#1e40af" text-anchor="middle">التركيب التجريبي لخلية قياس الناقلية</text>
+    
+    <!-- GBF (AC generator) at top -->
+    <circle cx="180" cy="65" r="22" fill="#eff6ff" stroke="#2563eb" stroke-width="2"/>
+    <text x="180" y="62" font-family="sans-serif" font-size="11" font-weight="bold" fill="#2563eb" text-anchor="middle">GBF</text>
+    <path d="M 170 72 Q 175 66 180 72 T 190 72" fill="none" stroke="#2563eb" stroke-width="1.5"/>
+
+    <!-- Circuit wires -->
+    <!-- From GBF left to Ammeter (80, 130) -->
+    <line x1="158" y1="65" x2="80" y2="65" stroke="#334155" stroke-width="2"/>
+    <line x1="80" y1="65" x2="80" y2="110" stroke="#334155" stroke-width="2"/>
+    <circle cx="80" cy="130" r="18" fill="#fef2f2" stroke="#dc2626" stroke-width="2"/>
+    <text x="80" y="135" font-family="sans-serif" font-size="14" font-weight="bold" fill="#dc2626" text-anchor="middle">A</text>
+    <line x1="80" y1="150" x2="80" y2="190" stroke="#334155" stroke-width="2"/>
+
+    <!-- Beaker with cell plates -->
+    <rect x="130" y="170" width="100" height="80" fill="none" stroke="#334155" stroke-width="2" rx="4"/>
+    <rect x="132" y="195" width="96" height="53" fill="#e0f2fe"/>
+    
+    <!-- Two parallel plates -->
+    <rect x="155" y="185" width="6" height="40" fill="#475569"/>
+    <rect x="195" y="185" width="6" height="40" fill="#475569"/>
+    <line x1="80" y1="190" x2="155" y2="190" stroke="#334155" stroke-width="2"/>
+
+    <!-- Return wire from right plate to GBF -->
+    <line x1="201" y1="190" x2="280" y2="190" stroke="#334155" stroke-width="2"/>
+    <line x1="280" y1="190" x2="280" y2="65" stroke="#334155" stroke-width="2"/>
+    <line x1="280" y1="65" x2="202" y2="65" stroke="#334155" stroke-width="2"/>
+
+    <!-- Voltmeter in parallel across cell -->
+    <line x1="155" y1="175" x2="155" y2="140" stroke="#059669" stroke-width="1.5"/>
+    <line x1="195" y1="175" x2="195" y2="140" stroke="#059669" stroke-width="1.5"/>
+    <line x1="155" y1="140" x2="200" y2="140" stroke="#059669" stroke-width="1.5"/>
+    <circle cx="175" cy="140" r="14" fill="#f0fdf4" stroke="#059669" stroke-width="1.5"/>
+    <text x="175" y="145" font-family="sans-serif" font-size="12" font-weight="bold" fill="#059669" text-anchor="middle">V</text>
+
+    <text x="175" y="240" font-family="sans-serif" font-size="11" font-weight="bold" fill="#0284c7" text-anchor="middle">خلية (S, L)</text>
+  </g>
+
+  <!-- Right: Kohlrausch Graph G = f(C) -->
+  <g transform="translate(460, 95)">
+    <rect width="280" height="260" fill="#ffffff" rx="6" stroke="#cbd5e1"/>
+    <text x="140" y="25" font-family="sans-serif" font-size="13" font-weight="bold" fill="#0f172a" text-anchor="middle">منحنى المعايرة بالناقلية G = f(C)</text>
+    <!-- Axes -->
+    <line x1="40" y1="210" x2="250" y2="210" stroke="#334155" stroke-width="1.5"/>
+    <text x="255" y="215" font-family="sans-serif" font-size="11" fill="#334155">C (mol/L)</text>
+    <line x1="40" y1="210" x2="40" y2="45" stroke="#334155" stroke-width="1.5"/>
+    <text x="35" y="40" font-family="sans-serif" font-size="11" fill="#334155">G (mS)</text>
+
+    <!-- Linear curve through origin -->
+    <line x1="40" y1="210" x2="220" y2="60" stroke="#2563eb" stroke-width="2.5"/>
+    <circle cx="85" cy="172" r="3.5" fill="#dc2626"/>
+    <circle cx="130" cy="135" r="3.5" fill="#dc2626"/>
+    <circle cx="175" cy="98" r="3.5" fill="#dc2626"/>
+
+    <text x="130" y="70" font-family="sans-serif" font-size="12" font-weight="bold" fill="#2563eb">G = k · C (محلول ممدد)</text>
+    <text x="140" y="240" font-family="sans-serif" font-size="11" fill="#64748b" text-anchor="middle">تطبيق مباشر لتعيين تركيز مجهول</text>
+  </g>
+
+  <!-- Bottom Formula Card -->
+  <rect x="60" y="375" width="680" height="50" fill="#f0fdf4" rx="6" stroke="#86efac"/>
+  <text x="400" y="405" font-family="sans-serif" font-size="13" font-weight="bold" fill="#166534" text-anchor="middle">
+    قانون كولروش : σ = λ₊ [X⁺] + λ₋ [Y⁻]   |   ثابت الخلية : K = S / L (بالمتر m)   |   G = I / U = σ · K
+  </text>
+</svg>

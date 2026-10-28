@@ -1,0 +1,76 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 850 480" width="100%" height="auto">
+  <defs>
+    <marker id="arr-gp" viewBox="0 0 10 10" refX="6" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M 0 1 L 10 5 L 0 9 z" fill="#334155"/>
+    </marker>
+  </defs>
+  <rect width="100%" height="100%" fill="#ffffff" rx="12"/>
+  <rect x="15" y="15" width="820" height="450" fill="#f8fafc" rx="8" stroke="#cbd5e1" stroke-width="1.5"/>
+
+  <text x="425" y="45" font-family="sans-serif" font-size="20" font-weight="bold" fill="#0f172a" text-anchor="middle">
+    نموذج الغاز المثالي وقوانين الغازات (Modèle du Gaz Parfait)
+  </text>
+  <text x="425" y="70" font-family="sans-serif" font-size="13" fill="#64748b" text-anchor="middle">
+    معادلة الحالة: P·V = n·R·T وقوانين بويل-ماريوت وشارل وغاي-لوساك
+  </text>
+
+  <!-- Left: Boyle-Mariotte Isotherm Graph P = f(V) -->
+  <g transform="translate(60, 100)">
+    <rect width="320" height="250" fill="#ffffff" rx="6" stroke="#cbd5e1"/>
+    <text x="160" y="25" font-family="sans-serif" font-size="13" font-weight="bold" fill="#1e40af" text-anchor="middle">منحنى بويل-ماريوت (T = Cte)</text>
+    <line x1="40" y1="205" x2="290" y2="205" stroke="#334155" stroke-width="1.5" marker-end="url(#arr-gp)"/>
+    <text x="295" y="210" font-family="sans-serif" font-size="11" fill="#334155">V (L)</text>
+    <line x1="40" y1="205" x2="40" y2="35" stroke="#334155" stroke-width="1.5" marker-end="url(#arr-gp)"/>
+    <text x="35" y="30" font-family="sans-serif" font-size="11" fill="#334155">P (Pa)</text>
+
+    <!-- Isotherm 1 (T1) -->
+    <path d="M 55 50 Q 75 140 140 170 T 270 195" fill="none" stroke="#2563eb" stroke-width="2.5"/>
+    <text x="230" y="180" font-family="sans-serif" font-size="11" font-weight="bold" fill="#2563eb">T₁ = 300 K</text>
+
+    <!-- Isotherm 2 (T2 > T1) -->
+    <path d="M 80 50 Q 110 120 180 150 T 280 175" fill="none" stroke="#dc2626" stroke-width="2.5"/>
+    <text x="240" y="145" font-family="sans-serif" font-size="11" font-weight="bold" fill="#dc2626">T₂ = 450 K</text>
+
+    <text x="160" y="235" font-family="sans-serif" font-size="11" font-weight="bold" fill="#0f172a" text-anchor="middle">P₁ · V₁ = P₂ · V₂ = ثابـت</text>
+  </g>
+
+  <!-- Right: Piston cylinder chamber -->
+  <g transform="translate(440, 100)">
+    <rect width="350" height="250" fill="#ffffff" rx="6" stroke="#cbd5e1"/>
+    <text x="175" y="25" font-family="sans-serif" font-size="13" font-weight="bold" fill="#047857" text-anchor="middle">التركيب التجريبي لضغط غاز في أسطوانة</text>
+    
+    <!-- Cylinder wall -->
+    <rect x="50" y="60" width="180" height="150" fill="none" stroke="#475569" stroke-width="3"/>
+    
+    <!-- Gas particles background -->
+    <rect x="52" y="110" width="176" height="98" fill="#e0f2fe"/>
+    
+    <!-- Piston head at y = 100 -->
+    <rect x="52" y="100" width="176" height="15" fill="#94a3b8" stroke="#334155" stroke-width="1.5"/>
+    <!-- Piston rod -->
+    <rect x="132" y="45" width="16" height="55" fill="#64748b"/>
+    <!-- Pressure gauge (Manometer) connected to side -->
+    <line x1="230" y1="160" x2="265" y2="160" stroke="#334155" stroke-width="2"/>
+    <circle cx="285" cy="160" r="20" fill="#f8fafc" stroke="#dc2626" stroke-width="2"/>
+    <text x="285" y="165" font-family="sans-serif" font-size="11" font-weight="bold" fill="#dc2626" text-anchor="middle">مانومتر</text>
+
+    <!-- Dots representing gas molecules -->
+    <g fill="#0284c7">
+      <circle cx="70" cy="130" r="3"/><circle cx="100" cy="145" r="3"/><circle cx="130" cy="125" r="3"/>
+      <circle cx="160" cy="150" r="3"/><circle cx="190" cy="135" r="3"/><circle cx="85" cy="175" r="3"/>
+      <circle cx="115" cy="185" r="3"/><circle cx="150" cy="170" r="3"/><circle cx="180" cy="190" r="3"/>
+      <circle cx="205" cy="165" r="3"/><circle cx="65" cy="195" r="3"/><circle cx="140" cy="195" r="3"/>
+    </g>
+
+    <text x="140" y="235" font-family="sans-serif" font-size="11" font-weight="bold" fill="#047857" text-anchor="middle">غاز محصور: (P, V, T, n)</text>
+  </g>
+
+  <!-- Bottom Formulas Summary Card -->
+  <rect x="40" y="375" width="770" height="70" fill="#f0fdf4" rx="8" stroke="#86efac"/>
+  <text x="425" y="400" font-family="sans-serif" font-size="13" font-weight="bold" fill="#166534" text-anchor="middle">
+    قوانين الغاز المثالي الأساسية : P·V = n·R·T   (P بالـ Pa ، V بالـ m³ ، T بالـ K مع T(K) = θ(°C) + 273.15)
+  </text>
+  <text x="425" y="425" font-family="sans-serif" font-size="12" fill="#15803d" text-anchor="middle">
+    الحجم المولي: V_m = R·T / P  |  الكثافة بالنسبة للهواء: d = M / 29  |  قانون غاي-لوساك: P/T = Cte  |  قانون شارل: V/T = Cte
+  </text>
+</svg>

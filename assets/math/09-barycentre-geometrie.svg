@@ -1,0 +1,58 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 450" width="100%" height="auto">
+  <defs>
+    <marker id="arr-bary" viewBox="0 0 10 10" refX="6" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M 0 1 L 10 5 L 0 9 z" fill="#2563eb"/>
+    </marker>
+  </defs>
+  <rect width="100%" height="100%" fill="#ffffff" rx="12"/>
+  <rect x="15" y="15" width="770" height="420" fill="#f8fafc" rx="8" stroke="#e2e8f0"/>
+  <text x="400" y="45" font-family="sans-serif" font-size="20" font-weight="bold" fill="#0f172a" text-anchor="middle">
+    المرجح في المستوي وخاصية التجميع ومجموعات النقط (Barycentre)
+  </text>
+  <text x="400" y="70" font-family="sans-serif" font-size="14" fill="#64748b" text-anchor="middle">
+    مركز ثقل المثلث G = Bar{(A,1), (B,1), (C,1)} وتقاطع المتوسطات
+  </text>
+
+  <!-- Triangle ABC: A(400, 100), B(150, 360), C(650, 360) -->
+  <polygon points="400,100 150,360 650,360" fill="#f1f5f9" stroke="#334155" stroke-width="2.5"/>
+
+  <!-- Midpoints of sides: A' (midpoint of BC), B' (midpoint of AC), C' (midpoint of AB) -->
+  <!-- A' is at (400, 360) -->
+  <!-- B' is at (525, 230) -->
+  <!-- C' is at (275, 230) -->
+
+  <!-- Medians -->
+  <line x1="400" y1="100" x2="400" y2="360" stroke="#dc2626" stroke-width="1.8" stroke-dasharray="5,4"/>
+  <line x1="150" y1="360" x2="525" y2="230" stroke="#059669" stroke-width="1.8" stroke-dasharray="5,4"/>
+  <line x1="650" y1="360" x2="275" y2="230" stroke="#7c3aed" stroke-width="1.8" stroke-dasharray="5,4"/>
+
+  <!-- Vertices -->
+  <circle cx="400" cy="100" r="6" fill="#1e40af"/>
+  <text x="400" y="85" font-family="sans-serif" font-size="16" font-weight="bold" fill="#1e40af" text-anchor="middle">A(1)</text>
+
+  <circle cx="150" cy="360" r="6" fill="#1e40af"/>
+  <text x="130" y="380" font-family="sans-serif" font-size="16" font-weight="bold" fill="#1e40af">B(1)</text>
+
+  <circle cx="650" cy="360" r="6" fill="#1e40af"/>
+  <text x="665" y="380" font-family="sans-serif" font-size="16" font-weight="bold" fill="#1e40af">C(1)</text>
+
+  <!-- Center of gravity G (400, 273.3) -->
+  <circle cx="400" cy="273" r="7" fill="#dc2626" stroke="#ffffff" stroke-width="2"/>
+  <text x="420" y="278" font-family="sans-serif" font-size="16" font-weight="bold" fill="#dc2626">G (مركز الثقل)</text>
+
+  <!-- Midpoint A' -->
+  <circle cx="400" cy="360" r="4" fill="#047857"/>
+  <text x="400" y="385" font-family="sans-serif" font-size="14" font-weight="bold" fill="#047857" text-anchor="middle">A' (منتصف [BC])</text>
+
+  <!-- Vector relation badge -->
+  <rect x="30" y="90" width="240" height="90" fill="#ffffff" rx="6" stroke="#cbd5e1"/>
+  <text x="150" y="115" font-family="sans-serif" font-size="13" font-weight="bold" fill="#0f172a" text-anchor="middle">العلاقة الشعاعية المميزة :</text>
+  <text x="150" y="140" font-family="sans-serif" font-size="13" fill="#dc2626" text-anchor="middle">GA + GB + GC = 0</text>
+  <text x="150" y="165" font-family="sans-serif" font-size="13" fill="#2563eb" text-anchor="middle">AG = (2/3) AA'</text>
+
+  <!-- Locus of points card -->
+  <rect x="530" y="90" width="235" height="90" fill="#eff6ff" rx="6" stroke="#bfdbfe"/>
+  <text x="647" y="115" font-family="sans-serif" font-size="13" font-weight="bold" fill="#1e40af" text-anchor="middle">مجموعة النقط (Lieu) :</text>
+  <text x="647" y="140" font-family="sans-serif" font-size="12" fill="#1e40af" text-anchor="middle">||MA + MB + MC|| = 3 k</text>
+  <text x="647" y="165" font-family="sans-serif" font-size="12" font-weight="bold" fill="#059669" text-anchor="middle">دائرة مركزها G ونصف قطرها k</text>
+</svg>

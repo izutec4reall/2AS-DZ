@@ -1,0 +1,76 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 850 420" width="100%" height="auto">
+  <defs>
+    <marker id="arr-tbl" viewBox="0 0 10 10" refX="6" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M 0 1 L 10 5 L 0 9 z" fill="#2563eb"/>
+    </marker>
+  </defs>
+  <rect width="100%" height="100%" fill="#ffffff" rx="12"/>
+  <rect x="15" y="15" width="820" height="390" fill="#f8fafc" rx="8" stroke="#cbd5e1" stroke-width="1.5"/>
+
+  <text x="425" y="45" font-family="sans-serif" font-size="20" font-weight="bold" fill="#0f172a" text-anchor="middle">
+    النموذج الكامل لجدول التغيرات (Tableau de Variations Complet)
+  </text>
+  <text x="425" y="70" font-family="sans-serif" font-size="13" fill="#64748b" text-anchor="middle">
+    مثال تطبيقي نموذجي: f(x) = x³ - 3x + 2 مع المشتقة f'(x) = 3(x² - 1)
+  </text>
+
+  <!-- Outer Table Border (x: 60 to 790, y: 95 to 330) -->
+  <rect x="60" y="95" width="730" height="235" fill="#ffffff" stroke="#334155" stroke-width="2" rx="6"/>
+
+  <!-- Row 1: x (height: 50, y: 95 to 145) -->
+  <line x1="60" y1="145" x2="790" y2="145" stroke="#334155" stroke-width="2"/>
+  <!-- Row 2: f'(x) (height: 50, y: 145 to 195) -->
+  <line x1="60" y1="195" x2="790" y2="195" stroke="#334155" stroke-width="2"/>
+  <!-- Row 3: f(x) (height: 135, y: 195 to 330) -->
+
+  <!-- Left Header Column (width: 140, x: 60 to 200) -->
+  <line x1="200" y1="95" x2="200" y2="330" stroke="#334155" stroke-width="2"/>
+  <rect x="60" y="95" width="140" height="235" fill="#f1f5f9" rx="6 0 0 6"/>
+
+  <!-- Header Labels -->
+  <text x="130" y="127" font-family="sans-serif" font-size="16" font-weight="bold" fill="#0f172a" text-anchor="middle">x</text>
+  <text x="130" y="177" font-family="sans-serif" font-size="16" font-weight="bold" fill="#2563eb" text-anchor="middle">إشارة f'(x)</text>
+  <text x="130" y="265" font-family="sans-serif" font-size="16" font-weight="bold" fill="#059669" text-anchor="middle">تغيرات f(x)</text>
+
+  <!-- X Values: -inf(240), -1(380), 1(560), +inf(740) -->
+  <text x="240" y="127" font-family="sans-serif" font-size="15" fill="#475569" text-anchor="middle">-∞</text>
+  <text x="380" y="127" font-family="sans-serif" font-size="16" font-weight="bold" fill="#0f172a" text-anchor="middle">-1</text>
+  <text x="560" y="127" font-family="sans-serif" font-size="16" font-weight="bold" fill="#0f172a" text-anchor="middle">1</text>
+  <text x="740" y="127" font-family="sans-serif" font-size="15" fill="#475569" text-anchor="middle">+∞</text>
+
+  <!-- f'(x) Signs and zeros -->
+  <!-- Zero at -1 (380) -->
+  <line x1="380" y1="145" x2="380" y2="195" stroke="#cbd5e1" stroke-width="1.5"/>
+  <circle cx="380" cy="170" r="10" fill="#fef2f2" stroke="#dc2626"/>
+  <text x="380" y="175" font-family="sans-serif" font-size="13" font-weight="bold" fill="#dc2626" text-anchor="middle">0</text>
+
+  <!-- Zero at 1 (560) -->
+  <line x1="560" y1="145" x2="560" y2="195" stroke="#cbd5e1" stroke-width="1.5"/>
+  <circle cx="560" cy="170" r="10" fill="#fef2f2" stroke="#dc2626"/>
+  <text x="560" y="175" font-family="sans-serif" font-size="13" font-weight="bold" fill="#dc2626" text-anchor="middle">0</text>
+
+  <!-- Plus and Minus Signs -->
+  <text x="300" y="175" font-family="sans-serif" font-size="20" font-weight="bold" fill="#059669" text-anchor="middle">+</text>
+  <text x="470" y="175" font-family="sans-serif" font-size="24" font-weight="bold" fill="#dc2626" text-anchor="middle">-</text>
+  <text x="650" y="175" font-family="sans-serif" font-size="20" font-weight="bold" fill="#059669" text-anchor="middle">+</text>
+
+  <!-- Variation Arrows and Values -->
+  <!-- Arrow 1: Increasing from -inf to 4 (at -1) -->
+  <text x="235" y="310" font-family="sans-serif" font-size="13" fill="#64748b">-∞</text>
+  <line x1="260" y1="300" x2="360" y2="230" stroke="#2563eb" stroke-width="3" marker-end="url(#arr-tbl)"/>
+  <text x="380" y="222" font-family="sans-serif" font-size="16" font-weight="bold" fill="#dc2626" text-anchor="middle">4 (ذروة كبرى)</text>
+
+  <!-- Arrow 2: Decreasing from 4 to 0 (at 1) -->
+  <line x1="400" y1="230" x2="540" y2="300" stroke="#dc2626" stroke-width="3" marker-end="url(#arr-tbl)"/>
+  <text x="560" y="318" font-family="sans-serif" font-size="16" font-weight="bold" fill="#dc2626" text-anchor="middle">0 (ذروة صغرى)</text>
+
+  <!-- Arrow 3: Increasing from 0 to +inf -->
+  <line x1="580" y1="300" x2="720" y2="230" stroke="#2563eb" stroke-width="3" marker-end="url(#arr-tbl)"/>
+  <text x="740" y="225" font-family="sans-serif" font-size="13" fill="#64748b">+∞</text>
+
+  <!-- Bottom Tip -->
+  <rect x="60" y="345" width="730" height="45" fill="#eff6ff" rx="6" stroke="#bfdbfe"/>
+  <text x="425" y="372" font-family="sans-serif" font-size="13" font-weight="bold" fill="#1e40af" text-anchor="middle">
+    قاعدة منهجية: إشارة المشتقة (+) تعني دالة متزايدة (سهم صاعد)، وإشارتها (-) تعني متناقصة (سهم هابط).
+  </text>
+</svg>

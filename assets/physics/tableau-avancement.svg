@@ -1,0 +1,65 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 850 420" width="100%" height="auto">
+  <rect width="100%" height="100%" fill="#ffffff" rx="12"/>
+  <rect x="15" y="15" width="820" height="390" fill="#f8fafc" rx="8" stroke="#cbd5e1" stroke-width="1.5"/>
+
+  <text x="425" y="45" font-family="sans-serif" font-size="20" font-weight="bold" fill="#0f172a" text-anchor="middle">
+    النموذج الشامل لجدول التقدم (Tableau d'Avancement)
+  </text>
+  <text x="425" y="70" font-family="sans-serif" font-size="13" fill="#64748b" text-anchor="middle">
+    تفاعل أكسدة-إرجاع: 2Fe²⁺(aq) + Br₂(aq) ⟶ 2Fe³⁺(aq) + 2Br⁻(aq)
+  </text>
+
+  <!-- Table Body (x: 50 to 800, y: 95 to 330) -->
+  <rect x="50" y="95" width="750" height="235" fill="#ffffff" stroke="#334155" stroke-width="2" rx="6"/>
+
+  <!-- Horizontal Dividers -->
+  <line x1="50" y1="145" x2="800" y2="145" stroke="#334155" stroke-width="2"/>
+  <line x1="50" y1="195" x2="800" y2="195" stroke="#cbd5e1" stroke-width="1.5"/>
+  <line x1="50" y1="250" x2="800" y2="250" stroke="#cbd5e1" stroke-width="1.5"/>
+
+  <!-- Vertical Column Dividers -->
+  <line x1="210" y1="95" x2="210" y2="330" stroke="#334155" stroke-width="2"/>
+  <line x1="280" y1="95" x2="280" y2="330" stroke="#334155" stroke-width="1.5"/>
+  <line x1="410" y1="95" x2="410" y2="330" stroke="#334155" stroke-width="1.5"/>
+  <line x1="540" y1="95" x2="540" y2="330" stroke="#334155" stroke-width="2"/>
+  <line x1="670" y1="95" x2="670" y2="330" stroke="#334155" stroke-width="1.5"/>
+
+  <!-- Header Row (y: 95 to 145) -->
+  <rect x="50" y="95" width="160" height="50" fill="#f1f5f9" rx="6 0 0 0"/>
+  <text x="130" y="125" font-family="sans-serif" font-size="14" font-weight="bold" fill="#0f172a" text-anchor="middle">معادلة التفاعل</text>
+  <text x="245" y="125" font-family="sans-serif" font-size="13" font-weight="bold" fill="#0f172a" text-anchor="middle">التقدم</text>
+  <text x="345" y="125" font-family="sans-serif" font-size="15" font-weight="bold" fill="#dc2626" text-anchor="middle">2 Fe²⁺</text>
+  <text x="475" y="125" font-family="sans-serif" font-size="15" font-weight="bold" fill="#dc2626" text-anchor="middle">+ Br₂</text>
+  <text x="605" y="125" font-family="sans-serif" font-size="15" font-weight="bold" fill="#059669" text-anchor="middle">⟶ 2 Fe³⁺</text>
+  <text x="735" y="125" font-family="sans-serif" font-size="15" font-weight="bold" fill="#059669" text-anchor="middle">+ 2 Br⁻</text>
+
+  <!-- Row 1: Initial State (y: 145 to 195) -->
+  <text x="130" y="172" font-family="sans-serif" font-size="13" font-weight="bold" fill="#475569" text-anchor="middle">حالة ابتدائية (t=0)</text>
+  <text x="245" y="172" font-family="sans-serif" font-size="13" fill="#475569" text-anchor="middle">x = 0</text>
+  <text x="345" y="172" font-family="sans-serif" font-size="13" fill="#1e40af" text-anchor="middle">n₁(Fe²⁺) = C₁V₁</text>
+  <text x="475" y="172" font-family="sans-serif" font-size="13" fill="#1e40af" text-anchor="middle">n₂(Br₂) = C₂V₂</text>
+  <text x="605" y="172" font-family="sans-serif" font-size="13" fill="#64748b" text-anchor="middle">0</text>
+  <text x="735" y="172" font-family="sans-serif" font-size="13" fill="#64748b" text-anchor="middle">0</text>
+
+  <!-- Row 2: Intermediate State (y: 195 to 250) -->
+  <text x="130" y="227" font-family="sans-serif" font-size="13" font-weight="bold" fill="#475569" text-anchor="middle">حالة انتقالية (t)</text>
+  <text x="245" y="227" font-family="sans-serif" font-size="13" fill="#475569" text-anchor="middle">x(t)</text>
+  <text x="345" y="227" font-family="sans-serif" font-size="13" fill="#0f172a" text-anchor="middle">n₁ - 2x</text>
+  <text x="475" y="227" font-family="sans-serif" font-size="13" fill="#0f172a" text-anchor="middle">n₂ - x</text>
+  <text x="605" y="227" font-family="sans-serif" font-size="13" fill="#059669" text-anchor="middle">2x</text>
+  <text x="735" y="227" font-family="sans-serif" font-size="13" fill="#059669" text-anchor="middle">2x</text>
+
+  <!-- Row 3: Final State (y: 250 to 330) -->
+  <text x="130" y="295" font-family="sans-serif" font-size="13" font-weight="bold" fill="#166534" text-anchor="middle">حالة نهائية (t_f)</text>
+  <text x="245" y="295" font-family="sans-serif" font-size="13" font-weight="bold" fill="#166534" text-anchor="middle">x_max</text>
+  <text x="345" y="295" font-family="sans-serif" font-size="13" font-weight="bold" fill="#0f172a" text-anchor="middle">n₁ - 2x_max</text>
+  <text x="475" y="295" font-family="sans-serif" font-size="13" font-weight="bold" fill="#0f172a" text-anchor="middle">n₂ - x_max</text>
+  <text x="605" y="295" font-family="sans-serif" font-size="13" font-weight="bold" fill="#059669" text-anchor="middle">2 x_max</text>
+  <text x="735" y="295" font-family="sans-serif" font-size="13" font-weight="bold" fill="#059669" text-anchor="middle">2 x_max</text>
+
+  <!-- Bottom Equivalence Note -->
+  <rect x="50" y="345" width="750" height="45" fill="#f0fdf4" rx="6" stroke="#86efac"/>
+  <text x="425" y="372" font-family="sans-serif" font-size="13" font-weight="bold" fill="#166534" text-anchor="middle">
+    تحديد المتفاعل المحد: x_max = min( n₁/2 , n₂/1 ). عند التكافؤ يختفي المتفاعلان معاً: n₁/2 = n₂/1.
+  </text>
+</svg>

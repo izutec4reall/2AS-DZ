@@ -1,0 +1,71 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 480" width="100%" height="auto">
+  <defs>
+    <marker id="arr-suite" viewBox="0 0 10 10" refX="6" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M 0 1 L 10 5 L 0 9 z" fill="#334155"/>
+    </marker>
+    <marker id="arr-step" viewBox="0 0 10 10" refX="6" refY="5" markerWidth="5" markerHeight="5" orient="auto-start-reverse">
+      <path d="M 0 1 L 10 5 L 0 9 z" fill="#dc2626"/>
+    </marker>
+  </defs>
+  <rect width="100%" height="100%" fill="#ffffff" rx="12"/>
+  <rect x="15" y="15" width="770" height="450" fill="#f8fafc" rx="8" stroke="#e2e8f0"/>
+  <text x="400" y="45" font-family="sans-serif" font-size="20" font-weight="bold" fill="#0f172a" text-anchor="middle">
+    التمثيل البياني لحدود متتالية تراجعية : uₙ₊₁ = f(uₙ)
+  </text>
+  <text x="400" y="70" font-family="sans-serif" font-size="14" fill="#64748b" text-anchor="middle">
+    المخطط السلمي (Diagramme en toile d'araignée / Escalier) والمنصف الأول (y = x)
+  </text>
+
+  <!-- Axes (Origin at 120, 390) -->
+  <line x1="80" y1="390" x2="720" y2="390" stroke="#334155" stroke-width="2" marker-end="url(#arr-suite)"/>
+  <text x="725" y="395" font-family="sans-serif" font-size="14" font-weight="bold" fill="#334155">x</text>
+  <line x1="120" y1="420" x2="120" y2="90" stroke="#334155" stroke-width="2" marker-end="url(#arr-suite)"/>
+  <text x="125" y="85" font-family="sans-serif" font-size="14" font-weight="bold" fill="#334155">y</text>
+
+  <!-- First bisector line y = x (from 120,390 to 420,90) -->
+  <line x1="120" y1="390" x2="680" y2="100" stroke="#059669" stroke-width="2.5"/>
+  <text x="690" y="110" font-family="sans-serif" font-size="14" font-weight="bold" fill="#059669">(Δ): y = x</text>
+
+  <!-- Curve y = f(x): f(x) = 0.5x + 2 -> intersects y=x at x = 4 -->
+  <line x1="120" y1="330" x2="680" y2="140" stroke="#2563eb" stroke-width="3"/>
+  <text x="690" y="150" font-family="sans-serif" font-size="15" font-weight="bold" fill="#2563eb">(Cf): y = f(x)</text>
+
+  <!-- Fixed Point L (Intersection of Cf and y=x at x=520, y=183) -->
+  <circle cx="507" cy="198" r="6" fill="#7c3aed"/>
+  <text x="520" y="195" font-family="sans-serif" font-size="14" font-weight="bold" fill="#7c3aed">نقطة الصمود L (نهاية المتتالية)</text>
+
+  <!-- Staircase construction starting from u0 = 200 (x=200, y=390) -->
+  <!-- Step 1: from (200, 390) up to Cf (200, 303) -->
+  <circle cx="200" cy="390" r="4" fill="#dc2626"/>
+  <text x="200" y="415" font-family="sans-serif" font-size="13" font-weight="bold" fill="#dc2626" text-anchor="middle">u₀</text>
+  <line x1="200" y1="390" x2="200" y2="303" stroke="#dc2626" stroke-width="2" marker-end="url(#arr-step)"/>
+
+  <!-- Step 2: horizontally to y = x (x=287, y=303) -->
+  <line x1="200" y1="303" x2="287" y2="303" stroke="#dc2626" stroke-width="2" marker-end="url(#arr-step)"/>
+  <!-- Projection down to show u1 -->
+  <line x1="287" y1="303" x2="287" y2="390" stroke="#94a3b8" stroke-width="1.5" stroke-dasharray="4,4"/>
+  <circle cx="287" cy="390" r="4" fill="#dc2626"/>
+  <text x="287" y="415" font-family="sans-serif" font-size="13" font-weight="bold" fill="#dc2626" text-anchor="middle">u₁</text>
+
+  <!-- Step 3: from (287, 303) up to Cf (287, 273) -->
+  <line x1="287" y1="303" x2="287" y2="273" stroke="#dc2626" stroke-width="2" marker-end="url(#arr-step)"/>
+
+  <!-- Step 4: horizontally to y=x (x=345, y=273) -->
+  <line x1="287" y1="273" x2="345" y2="273" stroke="#dc2626" stroke-width="2" marker-end="url(#arr-step)"/>
+  <line x1="345" y1="273" x2="345" y2="390" stroke="#94a3b8" stroke-width="1.5" stroke-dasharray="4,4"/>
+  <circle cx="345" cy="390" r="4" fill="#dc2626"/>
+  <text x="345" y="415" font-family="sans-serif" font-size="13" font-weight="bold" fill="#dc2626" text-anchor="middle">u₂</text>
+
+  <!-- Step 5: up to Cf and across to u3 -->
+  <line x1="345" y1="273" x2="345" y2="253" stroke="#dc2626" stroke-width="2"/>
+  <line x1="345" y1="253" x2="384" y2="253" stroke="#dc2626" stroke-width="2"/>
+  <line x1="384" y1="253" x2="384" y2="390" stroke="#94a3b8" stroke-width="1" stroke-dasharray="4,4"/>
+  <circle cx="384" cy="390" r="3.5" fill="#dc2626"/>
+  <text x="384" y="415" font-family="sans-serif" font-size="12" font-weight="bold" fill="#dc2626" text-anchor="middle">u₃</text>
+
+  <!-- Explanatory Card -->
+  <rect x="140" y="95" width="280" height="75" fill="#f0fdf4" rx="6" stroke="#86efac"/>
+  <text x="280" y="120" font-family="sans-serif" font-size="13" font-weight="bold" fill="#166534" text-anchor="middle">استنتاج خواص المتتالية :</text>
+  <text x="280" y="142" font-family="sans-serif" font-size="12" fill="#15803d" text-anchor="middle">• الحدود تزداد : u₀ &lt; u₁ &lt; u₂ (متزايدة)</text>
+  <text x="280" y="160" font-family="sans-serif" font-size="12" fill="#15803d" text-anchor="middle">• تتقارب الحدود تدريجياً نحو نقطة التقاطع L</text>
+</svg>
